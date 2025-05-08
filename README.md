@@ -3,10 +3,10 @@
 Singularity CoreNeuron installation in OLAF
 
 ## Steps to build the singularity image for the CoreNeuron
+Singularity images file `(*.sif)` is build using the `(*.def)` file located  in the folder `def_files`.
+The `(*.def)` files are run using the installer bash files in the `install` folder.
 
-Singularity images file `(*.sif) 
 
-Write defintion `(*.def)` file which is in the folder `def_files`; and run build script (bash file inside the `install`) to build the singularity image
 
 1. Clone the repository
 ```
