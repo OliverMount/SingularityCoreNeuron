@@ -1,26 +1,35 @@
+
 # SingularityCoreNeuron
 
-Singularity CoreNeuron installation in OLAF
+Singularity-based CoreNEURON Installation on OLAF
 
-## Steps to build the singularity image for the CoreNeuron
-Singularity image files (.sif) are built from definition (.def) files located in the `def_files` directory. These definition files are executed using installer bash scripts found in the `install` folder.
+## Building the Singularity Image for CoreNEURON
 
-1. Clone the repository
-```
-git clone git@github.com:OliverMount/SingularityCoreNeuron.git
-```
+Singularity image files (`*.sif`) are built using definition files (`*.def`) located in the `def_files` directory. These definition files are processed through installer scripts available in the `install` directory.
 
-2. Go to the `install` folder and set the appDIR path in the full.sh script. The appDIR path is the path of the directory where you cloned the repository in step 1. It is set to home directory currently $HOME (see the install/full.sh)
+### Step-by-Step Instructions
 
-3. Create `tmp` and `cache` directory for singularity to use during image building. Create `image` directory that will store the final sandbox and the .sif files.  The paths of these extra directories has to be set in `install/full.sh`. By default, these directories points to the directory in the home
+1. **Clone the Repository**
 
+   ```bash
+   git clone git@github.com:OliverMount/SingularityCoreNeuron.git
+   ```
 
-4. Run the  `full.sh` in the install directory.
-```
-cd install
-./full.sh
-```
+2. **Set the Installation Path** Navigate to the `install` directory and edit the `full.sh` script. Update the `appDIR` variable to reflect the path where you cloned the repository. By default, this is set to your home directory (`$HOME`).
 
-5. The sandbox and the image are in the image folder after sucessful run of the step 4.
+3. **Create Required Directories** You need to create the following directories for Singularity to use during the build process:
 
-  
+   - `tmp`
+   - `cache`
+   - `image`
+
+   These paths must also be specified in the `install/full.sh` script. By default, they are set to locations inside your home directory.
+
+4. **Run the Installation Script** Execute the full installation script:
+
+   ```bash
+   cd install
+   ./full.sh
+   ```
+
+5. **Locate the Output** After a successful run, the resulting sandbox and `.sif` image files will be located in the `image` directory.
