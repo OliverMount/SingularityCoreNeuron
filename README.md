@@ -33,3 +33,10 @@ Singularity image files (`*.sif`) are built using definition files (`*.def`) loc
    ```
 
 5. **Locate the Output** After a successful run, the resulting sandbox and `.sif` image files will be located in the `image` directory.
+
+
+
+## Run batch files in OLAF
+
+(will be updated soon ..)
+
