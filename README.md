@@ -16,7 +16,7 @@ Singularity image files (`*.sif`) are built using definition files (`*.def`) loc
    ```
 
 2. **Edit the def file**
-    The def file needs to be edited for  
+    The def file needs to be edited for paths where the predownloaded 
 
 
 2. **Set the Installation Path** Navigate to the `install` directory and edit the `full.sh` script. Update the `appDIR` variable to reflect the path where you cloned the repository. By default, this is set to your home directory (`$HOME`).
