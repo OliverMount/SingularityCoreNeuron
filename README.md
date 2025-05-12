@@ -1,6 +1,5 @@
 
 # SingularityCoreNeuron
-
 Singularity-based CoreNEURON Installation on OLAF
 
 ## Building the Singularity Image for CoreNEURON
