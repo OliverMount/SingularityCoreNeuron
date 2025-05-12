@@ -40,5 +40,4 @@ The size of the nvidia hpc sdk is huge (~7GB); so it would be better to download
 
 ## Run batch files in OLAF
 
-(will be updated soon ..)
 
