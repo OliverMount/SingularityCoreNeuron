@@ -76,7 +76,7 @@ After successful execution, the output files will be located in:
 ```
 image/
   |-- cn.sif
-  |-- cn/
+  |-- cn_sandbox/
 ```
 
 ## Running on HPC 
