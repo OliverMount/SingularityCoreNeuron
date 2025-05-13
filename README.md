@@ -75,8 +75,8 @@ This will build the Singularity sandbox and `.sif` image and place them in the `
 After successful execution, the output files will be located in:
 ```
 image/
-  |-- coreneuron.sif
-  |-- sandbox/
+  |-- cn.sif
+  |-- cn/
 ```
 
 ## Running on OLAF
