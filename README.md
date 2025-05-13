@@ -14,11 +14,12 @@ Singularity image files (`*.sif`) are built using definition files (`*.def`) loc
    ```
 
 2. **Edit the %file sectin of the def file**
-    In our way of installation, the %file section of the def file contains the predownload libraries such as NVIDIA-HPC-SDK and our HPC's openmpi libraries (the files are not included in the repository).  
+    In our way of installation, the %file section of the def file contains the predownloaded libraries such as NVIDIA-HPC-SDK and our HPC's openmpi libraries (the files are not included in the repository). Edit the path in this section! 
+
+The size of the NVIDIA-HPC-SDK is huge (~7GB); so it would be better to download them prior to building the image. The path of the download tar.gz file is set in the %files portion of the cn.def file in the `def_files` directory.
 
 3. **Set the Installation Path** Navigate to the `install` directory and edit the `full.sh` script. Update the `appDIR` variable to reflect the path where you cloned the repository. By default, this is set to your home directory (`$HOME`).
 
-The size of the nvidia hpc sdk is huge (~7GB); so it would be better to download them prior to building the image. The path of the download tar.gz file is set in the %files portion of the cn.def file in the `def_files` directory.
 
 4. **Create Required Directories** You need to create the following directories for Singularity to use during the build process:
 
