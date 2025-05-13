@@ -1,0 +1,21 @@
+#!/bin/bash
+#SBATCH --job-name=gran
+#SBATCH --output=gran.out
+#SBATCH --error=gran.err
+#SBATCH --partition=AIP
+#SBATCH --nodes=1                  
+#SBATCH --gpus-per-node=1          
+#SBATCH --ntasks-per-node=2        
+#SBATCH --time=00:05:00
+#SBATCH --exclusive                
+
+rm -rf tmp/ x86_64/
+
+module load singularity
+
+singularity exec --nv --cleanenv /proj/internal_group/ccs/oli/cn.sif nrnivmodl  -coreneuron mod/    # Assuming running from the src folder
+
+# submit the job using singularity container
+srun --mpi=pmi2 singularity exec --nv /proj/internal_group/ccs/oli/cn.sif \
+    ./x86_64/special ../scripts/test_pc_complex_spike_0423.py 
+
