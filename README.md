@@ -37,6 +37,36 @@ vim cn.def
 
 Update paths under `%files` accordingly.
 
+A way to find which mpi installed in your HPC is slrum-aware, run the following in your HPC terminal 
+```bash
+srun --mpi=list
+```
+The output (in our HPC) would be like 
+
+```
+srun: MPI types are...
+srun: cray_shasta
+srun: none
+srun: pmi2
+```
+The output shows that in our HPC pmi2 libraries are used. Find their locations by
+
+```
+find /usr/include /usr/local/include -name pmi2.h
+find /usr/include /usr/local/include -name libpmi2.so
+```
+
+copy them to a local folder in a computer 
+
+```
+cp /usr/include/slurm/pmi*.h YourLocalFolder/include/
+cp /lib64/libpmi*.so* YourLocalFolder/lib64/
+cp /usr/lib64/slurm/libslurm_pmi.so* YourLocalFolder/lib64/
+
+```
+and transfer them during image formation (These are the first five lines in our cn.def file).
+
+
 ### 3. Set Installation Path
 Edit the `install/full.sh` script and update the `appDIR` variable to reflect the path where you cloned the repository:
 
