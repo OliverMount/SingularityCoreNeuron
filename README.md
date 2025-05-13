@@ -40,8 +40,6 @@ The size of the NVIDIA-HPC-SDK is huge (~7GB); so it would be better to download
 
 
 ## Run batch files in OLAF
-### Compiling and running corepc (Single GPU version)
 
-### Compiling and running corepc (Multi GPU version)
-
+Batch files are located in the `batch` folder and can be run using `sbatch *.batch` in the OLAF.  
 
