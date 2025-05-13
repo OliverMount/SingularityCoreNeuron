@@ -1,45 +1,91 @@
 # SingularityCoreNeuron
-Singularity-based CoreNEURON Installation in OLAF
 
-## Building the Singularity Image for CoreNEURON
+This repository provides a streamlined method to build a Singularity image for CoreNEURON with GPU and MPI support, suitable for use in HPC environments.
 
-Singularity image files (`*.sif`) are built using definition files (`*.def`) located in the `def_files` directory. These definition files are processed through installer scripts available in the `install` directory.
+## Repository Structure
 
-### Step-by-Step Instructions
+- `def_files/`: Contains Singularity definition files (`*.def`)
+- `install/`: Installer scripts used to build the Singularity image
+- `batch/`: Example SLURM batch scripts to run jobs in HPC environment
 
-1. **Clone the Repository**
+## Prerequisites
 
-   ```bash
-   git clone git@github.com:OliverMount/SingularityCoreNeuron.git
-   ```
+- NVIDIA HPC SDK (large download, ~7GB)
+- SLURM-aware OpenMPI libraries (use the same openmpi libraries as used in the HPC environment)
+- Singularity (version 3.0+ recommended)
 
-2. **Edit the %file sectin of the def file**
-    In our way of installation, the %file section of the def file contains the predownloaded libraries such as NVIDIA-HPC-SDK and our HPC's openmpi libraries (the files are not included in the repository). Edit the path in this section! 
+> **Note:** The NVIDIA-HPC-SDK and OpenMPI SLRUM-aware libraries are **not included** in the repository. You must download them manually.
 
-The size of the NVIDIA-HPC-SDK is huge (~7GB); so it would be better to download them prior to building the image. The path of the download tar.gz file is set in the %files portion of the cn.def file in the `def_files` directory.
+## Step-by-Step Instructions
 
-3. **Set the Installation Path** Navigate to the `install` directory and edit the `full.sh` script. Update the `appDIR` variable to reflect the path where you cloned the repository. By default, this is set to your home directory (`$HOME`).
+### 1. Clone the Repository
+```bash
+git clone git@github.com:OliverMount/SingularityCoreNeuron.git
+cd SingularityCoreNeuron
+```
 
+### 2. Edit Definition File
+Navigate to the `def_files` directory and edit the `%files` section of the `cn.def` file. Update the file paths to point to your **locally downloaded**:
 
-4. **Create Required Directories** You need to create the following directories for Singularity to use during the build process:
+- NVIDIA HPC SDK tarball
+- OpenMPI tarball or prebuilt directory
 
-   - `tmp`
-   - `cache`
-   - `image`
+```bash
+cd def_files
+vim cn.def
+```
 
-   These paths must also be specified in the `install/full.sh` script. By default, they are set to locations inside your home directory.
+Update paths under `%files` accordingly.
 
-5. **Run the Installation Script** Execute the full installation script:
+### 3. Set Installation Path
+Edit the `install/full.sh` script and update the `appDIR` variable to reflect the path where you cloned the repository:
 
-   ```bash
-   cd install
-   ./full.sh
-   ```
+```bash
+cd install
+vim full.sh
+```
 
-6. **Locate the Output** After a successful run, the resulting sandbox and `.sif` image files will be located in the `image` directory.
+Set:
+```bash
+appDIR=/your/path/to/SingularityCoreNeuron
+```
 
+### 4. Create Required Directories
+Ensure the following directories exist. By default, these are located in your `$HOME`:
 
-## Run batch files in OLAF
+- `tmp/`
+- `cache/`
+- `image/`
 
-Batch files are located in the `batch` folder and can be run using `sbatch *.batch` in the OLAF.  
+If you change their paths, update them in `install/full.sh`.
+
+```bash
+mkdir -p $HOME/tmp $HOME/cache $HOME/image
+```
+
+### 5. Run the Installation Script
+```bash
+cd install
+./full.sh
+```
+
+This will build the Singularity sandbox and `.sif` image and place them in the `image/` directory.
+
+### 6. Locate the Output
+After successful execution, the output files will be located in:
+```
+image/
+  |-- coreneuron.sif
+  |-- sandbox/
+```
+
+## Running on OLAF
+
+SLURM batch scripts for running CoreNEURON jobs on OLAF are provided in the `batch/` directory. To run:
+```bash
+cd batch
+sbatch your_script.batch
+```
+---
+
 
