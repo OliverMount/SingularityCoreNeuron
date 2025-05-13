@@ -82,9 +82,10 @@ image/
 ## Running on HPC 
 
 SLURM batch scripts for running CoreNEURON jobs on HPC are provided in the `batch/` directory. To run:
+Change the GPU numbers, threads in the batch file
 ```bash
 cd batch
-sbatch your_script.batch
+sbatch run.batch
 ```
 ---
 
