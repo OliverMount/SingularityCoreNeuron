@@ -40,9 +40,9 @@ The size of the NVIDIA-HPC-SDK is huge (~7GB); so it would be better to download
 
 
 ## Run batch files in OLAF
-### Compiling and running corepc
+### Compiling and running corepc (Single GPU version)
 
 
-
+### Compiling and running corepc (Single GPU version)
 
 
