@@ -1,0 +1,12 @@
+Architecture,Compute Capability,Example GPU Models
+Pascal,"6.0 / 6.1 / 6.2","GeForce GTX 1080, Tesla P100, GTX 1070"
+Volta,7.0,"Tesla V100, Titan V"
+Turing,7.5,"GeForce RTX 2080, TITAN RTX, RTX 2070 SUPER"
+Ampere,"8.0 / 8.6","GeForce RTX 3090, A100, RTX 3080"
+Hopper,9.0,"H100"
+Ada Lovelace,8.9,"GeForce RTX 4090, RTX 4080"
+Maxwell,"5.0 / 5.2 / 5.3","GeForce GTX 980, GTX 750 Ti"
+Kepler,"3.0 / 3.5 / 3.7","GeForce GTX 780, Tesla K80"
+Fermi,"2.0 / 2.1","GeForce GTX 480, Tesla M2090"
+Blackwell,9.x,"B100 (next-gen successor to Hopper)"
+
