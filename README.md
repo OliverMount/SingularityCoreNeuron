@@ -28,7 +28,7 @@ cd SingularityCoreNeuron
 Navigate to the `def_files` directory and edit the `%files` section of the `cn.def` file. Update the file paths to point to your **locally downloaded**:
 
 - NVIDIA HPC SDK tarball
-- OpenMPI tarball or prebuilt directory (make sure the OpenMPI in the container is the same version as in the HPC for ABI compatibility.)
+- OpenMPI tarball or prebuilt directory (make sure the OpenMPI libraries in the container is the same version as in the HPC for ABI compatibility.)
 
 ```bash
 cd def_files
