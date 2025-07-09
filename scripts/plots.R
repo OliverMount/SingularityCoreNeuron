@@ -1,6 +1,8 @@
 
 library(tidyverse)
 
+save_path="/media/oli/Research/Gitrepo/SingularityCoreNeuron/presentation/CBrain2025"
+
 df<- read.csv("results/benchmark.csv")
 df <- df %>%
   mutate(System = recode(System,
@@ -70,8 +72,10 @@ ggplot(compare_df, aes(x = factor(Resource), y = ME, fill =  System)) + theme_cl
         axis.title.x = element_text(size=28),
         axis.title.y = element_text(size=28),
         plot.title = element_text(size=28,hjust = 0.5), 
-        legend.title = element_blank()) +
+        legend.title = element_text(size=20,hjust = 0.5,vjust=1)) +
   scale_y_continuous(breaks = c(150,300),limits = c(0,350),
                      expand = c(0,0))
   
+ggsave(file.path(save_path,'HPCcompare.eps'),width = 8, height=9) 
+
 # theme(plot.title = element_text(hjust = 0.5))
