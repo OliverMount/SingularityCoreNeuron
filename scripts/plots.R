@@ -38,7 +38,7 @@ ggplot(karina_df, aes(x = factor(Resource), y = ME)) +
         legend.title = element_blank()) +
   scale_y_continuous(breaks = c(150,300),limits = c(0,350),
                      expand = c(0,0))  +
-  labs(x = "Number of GPUs", y = "Solver Time (sec) ", title = "HPC: Turing.  Solver Time vs. GPUs")   
+  labs(x = "Number of GPUs", y = "Solver Time (s) ", title = "HPC: Turing.  Solver Time vs. GPUs")   
 ggsave(file.path(save_path,'Turing.eps'),width = 8, height=9,dpi = 300) 
 
   
@@ -54,7 +54,7 @@ ggplot(compare_df, aes(x = factor(Resource), y = ME, fill =  System)) + theme_cl
   geom_text(aes(label = round(ME)), 
             position = position_dodge(width = 0.8), 
             vjust = -0.5, size = 9) +
-  labs(x = "Number of GPUs", y = "Solver Time (sec)", fill = "HPC env.",
+  labs(x = "Number of GPUs", y = "Solver Time (s)", fill = "HPC env.",
        title = "") +
   theme(legend.position= c(0.8,0.8),
         legend.key.size =  unit(1.5, "lines"),

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.30)  10 JUL 2025 12:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.30)  10 JUL 2025 16:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1024,29 +1024,44 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package hyperref Warning: Option `pdfauthor' has already been used,
 (hyperref)                setting the option has no effect on input line 33.
 
+Package epstopdf Info: Source file: <output1.eps>
+(epstopdf)                    date: 2025-07-10 16:22:13
+(epstopdf)                    size: 2998178 bytes
+(epstopdf)             Output file: <output1-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-07-10 16:23:01
+(epstopdf)                    size: 147458 bytes
+(epstopdf)             Command: <repstopdf --outfile=output1-eps-converted-to.p
+df output1.eps>
+(epstopdf)             \includegraphics on input line 180.
+Package epstopdf Info: Output file is already uptodate.
+<output1-eps-converted-to.pdf, id=13, 542.025pt x 487.8225pt>
+File: output1-eps-converted-to.pdf Graphic file (type pdf)
+<use output1-eps-converted-to.pdf>
+Package pdftex.def Info: output1-eps-converted-to.pdf  used on input line 180.
+(pdftex.def)             Requested size: 758.82982pt x 682.94684pt.
 Package epstopdf Info: Source file: <output.eps>
-(epstopdf)                    date: 2025-07-10 12:16:53
-(epstopdf)                    size: 4126323 bytes
+(epstopdf)                    date: 2025-07-10 14:27:04
+(epstopdf)                    size: 4337251 bytes
 (epstopdf)             Output file: <output-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-07-10 12:18:32
-(epstopdf)                    size: 162193 bytes
+(epstopdf)                    date: 2025-07-10 14:27:11
+(epstopdf)                    size: 193947 bytes
 (epstopdf)             Command: <repstopdf --outfile=output-eps-converted-to.pd
 f output.eps>
-(epstopdf)             \includegraphics on input line 139.
+(epstopdf)             \includegraphics on input line 180.
 Package epstopdf Info: Output file is already uptodate.
-<output-eps-converted-to.pdf, id=13, 526.96875pt x 605.26125pt>
+<output-eps-converted-to.pdf, id=14, 545.03625pt x 605.26125pt>
 File: output-eps-converted-to.pdf Graphic file (type pdf)
 <use output-eps-converted-to.pdf>
-Package pdftex.def Info: output-eps-converted-to.pdf  used on input line 139.
-(pdftex.def)             Requested size: 790.45117pt x 907.88962pt.
-LaTeX Font Info:    Calculating math sizes for size <37.32> on input line 139.
+Package pdftex.def Info: output-eps-converted-to.pdf  used on input line 180.
+(pdftex.def)             Requested size: 926.55771pt x 1028.93973pt.
+LaTeX Font Info:    Calculating math sizes for size <37.32> on input line 180.
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 139.
+ut line 180.
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-LaTeX Font Info:    Calculating math sizes for size <64.5> on input line 139.
+LaTeX Font Info:    Calculating math sizes for size <64.5> on input line 180.
 Package epstopdf Info: Source file: <Cerebellum.eps>
 (epstopdf)                    date: 2025-07-09 15:40:11
 (epstopdf)                    size: 8103149 bytes
@@ -1055,51 +1070,54 @@ Package epstopdf Info: Source file: <Cerebellum.eps>
 (epstopdf)                    size: 1755076 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cerebellum-eps-converted-t
 o.pdf Cerebellum.eps>
-(epstopdf)             \includegraphics on input line 139.
+(epstopdf)             \includegraphics on input line 180.
 Package epstopdf Info: Output file is already uptodate.
-<Cerebellum-eps-converted-to.pdf, id=14, 2164.085pt x 1917.1625pt>
+<Cerebellum-eps-converted-to.pdf, id=15, 2164.085pt x 1917.1625pt>
 File: Cerebellum-eps-converted-to.pdf Graphic file (type pdf)
 <use Cerebellum-eps-converted-to.pdf>
-Package pdftex.def Info: Cerebellum-eps-converted-to.pdf  used on input line 13
-9.
+Package pdftex.def Info: Cerebellum-eps-converted-to.pdf  used on input line 18
+0.
 (pdftex.def)             Requested size: 973.82928pt x 862.71518pt.
 Package epstopdf Info: Source file: <Turing.eps>
-(epstopdf)                    date: 2025-07-09 18:14:07
-(epstopdf)                    size: 6886 bytes
+(epstopdf)                    date: 2025-07-10 13:36:37
+(epstopdf)                    size: 6884 bytes
 (epstopdf)             Output file: <Turing-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-07-09 18:14:23
-(epstopdf)                    size: 11696 bytes
+(epstopdf)                    date: 2025-07-10 13:46:22
+(epstopdf)                    size: 11619 bytes
 (epstopdf)             Command: <repstopdf --outfile=Turing-eps-converted-to.pd
 f Turing.eps>
-(epstopdf)             \includegraphics on input line 139.
+(epstopdf)             \includegraphics on input line 180.
 Package epstopdf Info: Output file is already uptodate.
-<Turing-eps-converted-to.pdf, id=15, 578.16pt x 650.43pt>
+<Turing-eps-converted-to.pdf, id=16, 578.16pt x 650.43pt>
 File: Turing-eps-converted-to.pdf Graphic file (type pdf)
 <use Turing-eps-converted-to.pdf>
-Package pdftex.def Info: Turing-eps-converted-to.pdf  used on input line 139.
+Package pdftex.def Info: Turing-eps-converted-to.pdf  used on input line 180.
 (pdftex.def)             Requested size: 515.08398pt x 579.49622pt.
 Package epstopdf Info: Source file: <HPCcompare.eps>
-(epstopdf)                    date: 2025-07-09 18:14:07
-(epstopdf)                    size: 7773 bytes
+(epstopdf)                    date: 2025-07-10 13:36:37
+(epstopdf)                    size: 7771 bytes
 (epstopdf)             Output file: <HPCcompare-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-07-09 18:14:23
-(epstopdf)                    size: 12119 bytes
+(epstopdf)                    date: 2025-07-10 13:46:23
+(epstopdf)                    size: 12042 bytes
 (epstopdf)             Command: <repstopdf --outfile=HPCcompare-eps-converted-t
 o.pdf HPCcompare.eps>
-(epstopdf)             \includegraphics on input line 139.
+(epstopdf)             \includegraphics on input line 180.
 Package epstopdf Info: Output file is already uptodate.
-<HPCcompare-eps-converted-to.pdf, id=16, 578.16pt x 650.43pt>
+<HPCcompare-eps-converted-to.pdf, id=17, 578.16pt x 650.43pt>
 File: HPCcompare-eps-converted-to.pdf Graphic file (type pdf)
 <use HPCcompare-eps-converted-to.pdf>
-Package pdftex.def Info: HPCcompare-eps-converted-to.pdf  used on input line 13
-9.
+Package pdftex.def Info: HPCcompare-eps-converted-to.pdf  used on input line 18
+0.
 (pdftex.def)             Requested size: 515.08398pt x 579.49622pt.
+
+Overfull \vbox (26.4319pt too high) detected at line 180
+ []
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./output-eps-converted-to.
-pdf> <./Cerebellum-eps-converted-to.pdf> <./Turing-eps-converted-to.pdf> <./HPC
-compare-eps-converted-to.pdf>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./output1-eps-converted-to
+.pdf> <./output-eps-converted-to.pdf> <./Cerebellum-eps-converted-to.pdf> <./Tu
+ring-eps-converted-to.pdf> <./HPCcompare-eps-converted-to.pdf>]
 \tf@nav=\write6
 \openout6 = `Presentation.nav'.
 
@@ -1109,7 +1127,8 @@ compare-eps-converted-to.pdf>]
 \tf@snm=\write8
 \openout8 = `Presentation.snm'.
 
- (./Presentation.aux)
+
+(./Presentation.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1118,20 +1137,20 @@ Package rerunfilecheck Info: File `Presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23028 strings out of 474222
- 439995 string characters out of 5748733
- 1951975 words of memory out of 5000000
- 44777 multiletter control sequences out of 15000+600000
+ 23073 strings out of 474222
+ 441050 string characters out of 5748733
+ 1955975 words of memory out of 5000000
+ 44820 multiletter control sequences out of 15000+600000
  572834 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,14n,123p,387b,853s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,14n,123p,387b,1056s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Presentation.pdf (1 page, 1969937 bytes).
+Output written on Presentation.pdf (1 page, 2147183 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
+ 5 named destinations out of 1000 (max. 500000)
+ 68 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -58,16 +58,30 @@
             \vspace{0.5cm}
             \begin{block}{\LARGE Containerization for Scientific Computing}
             \centering
-            %\vspace{0.5cm}
+            \vspace{0.5cm}
+
+\justifying
+             {\large 1.  Container is a lightweight, standalone, and executable package that includes everything needed to run a piece of software  \\[0.3 cm]
+
+              2. Run anything anywhere
+
+               }
+       \centering
+               \includegraphics[scale=1.4]{output1.eps}
+
+
              %\includegraphics[scale=2.2 ]{/home/olive/Desktop/figs/tex/Paradigm_ReportOnly.eps}
             \end{block}
 
             \begin{block}{\LARGE Our Computational Framework}
+             \vspace{2 cm}
+
+
             \centering
-               \includegraphics[scale=1.5]{output.eps}
+               \includegraphics[scale=1.7]{output.eps}
             \end{block}
 
-            A slight change in mask contrast induces blindsight-like behavioral performance.
+
 
              \vspace{0.5cm}
         \end{column}
@@ -98,12 +112,24 @@
             \centering
             %\includegraphics[scale=1.74,angle=-90]{/home/olive/Desktop/figs/tex/Fig2c.eps}
 
-       \vspace{0.5 cm}
+       \vspace{1 cm}
 
-        \justifying
-      {\textcolor{red}{Number of MF: 85600}}$~~~~~~~~~~~~~~~~~~~~$ {\textcolor{violet}{Number of GRC: 314000}} \\[0.3 cm]
-                Number of compartments: 942000  \\[0.3 cm]
-                Number of synapses: 990960$~~~~~~~~~~~~~$Simulation time: 2 sec
+
+\begin{table}[htbp]
+\centering
+\caption{Network Configuration and Simulation Parameters}
+\begin{tabular}{l@{\hspace{5cm}}l}
+\hline
+\textcolor{red}{Number of MF}         & \textcolor{red}{85600} \\
+\textcolor{violet}{Number of GRC}     & \textcolor{violet}{314000} \\
+Number of compartments                & 942000 \\
+Number of synapses                    & 990960 \\
+Simulation time                       & 2 s \\
+\hline
+\end{tabular}
+\end{table}
+
+ \vspace{1 cm}
 
 
             \begin{block}{\LARGE Performance Across HPC Environment}
@@ -114,12 +140,27 @@
 \vspace{1 cm}
 
             \centering
-            \includegraphics[width=0.45\textwidth]{Turing.eps}
+            %\includegraphics[width=0.45\textwidth]{Turing.eps}
 
-            \includegraphics[width=0.45\textwidth]{HPCcompare.eps}
+            %\includegraphics[width=0.45\textwidth]{HPCcompare.eps}
 
 
-            \justifying
+            \begin{figure}[htbp]
+    \centering
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Turing.eps}
+        \caption{a. Turing architecture}
+        \label{fig:turing}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{HPCcompare.eps}
+        \caption{b. HPC comparison}
+        \label{fig:hpccompare}
+    \end{minipage}
+\end{figure}
 
 
             \end{block}
