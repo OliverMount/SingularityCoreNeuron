@@ -19,7 +19,7 @@ karina_df <- df_plot %>% filter(System == "Turing")
 ggplot(karina_df, aes(x = factor(Resource), y = ME)) +
   geom_col(fill = "steelblue",width = 0.6) + theme_classic() +
   geom_errorbar(aes(ymin = ME - SD, ymax = ME + SD), width = 0.2) +
-  geom_text(aes(label = round(ME)), vjust = -0.5, size = 7) + 
+  geom_text(aes(label = round(ME)), vjust = -0.5, size = 9) + 
   theme(legend.position= "none",
         legend.key.size =  unit(4, "lines"),
         legend.spacing.x = unit(0.1,"mm"),
@@ -38,11 +38,10 @@ ggplot(karina_df, aes(x = factor(Resource), y = ME)) +
         legend.title = element_blank()) +
   scale_y_continuous(breaks = c(150,300),limits = c(0,350),
                      expand = c(0,0))  +
-  labs(x = "Number of GPUs", y = "Solver Time (sec) ", title = "Turing: Solver Time vs. GPUs")   
+  labs(x = "Number of GPUs", y = "Solver Time (sec) ", title = "HPC: Turing.  Solver Time vs. GPUs")   
+ggsave(file.path(save_path,'Turing.eps'),width = 8, height=9,dpi = 300) 
+
   
-
- 
-
 
 
 # Filter for GPU 1 and 2 only
@@ -54,7 +53,7 @@ ggplot(compare_df, aes(x = factor(Resource), y = ME, fill =  System)) + theme_cl
                 position = position_dodge(width = 0.8), width = 0.2) + 
   geom_text(aes(label = round(ME)), 
             position = position_dodge(width = 0.8), 
-            vjust = -0.5, size = 5) +
+            vjust = -0.5, size = 9) +
   labs(x = "Number of GPUs", y = "Solver Time (sec)", fill = "HPC env.",
        title = "") +
   theme(legend.position= c(0.8,0.8),
@@ -76,6 +75,6 @@ ggplot(compare_df, aes(x = factor(Resource), y = ME, fill =  System)) + theme_cl
   scale_y_continuous(breaks = c(150,300),limits = c(0,350),
                      expand = c(0,0))
   
-ggsave(file.path(save_path,'HPCcompare.eps'),width = 8, height=9) 
+ggsave(file.path(save_path,'HPCcompare.eps'),width = 8, height=9,dpi = 300) 
 
 # theme(plot.title = element_text(hjust = 0.5))
