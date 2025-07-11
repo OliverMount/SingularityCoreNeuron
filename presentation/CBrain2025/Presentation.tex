@@ -4,15 +4,29 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{textpos}
-\usepackage[orientation=portrait, size=a0,scale=1.5]{beamerposter}
+\usepackage[orientation=portrait, size=a0,scale=1.4]{beamerposter}
 \usepackage{ragged2e}
 \usepackage{graphicx}
 
-\usepackage{subfigure}
+%\usepackage{subfigure}
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+% Global default (e.g., tables) stays centered
+\captionsetup{justification=centering}
+
+% Override only for figures
+\captionsetup[figure]{justification=justified,singlelinecheck=false}
+\captionsetup[subfigure]{justification=justified,singlelinecheck=false}
 
 
 \usetheme{Berlin}
 %\usecolortheme{dolphin}
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Gemini}
+
 
 \setbeamertemplate{headline}{}
 \setbeamertemplate{footline}{}
@@ -29,7 +43,7 @@
 \begin{document}
 %\begin{textblock}{100}(0.1,1.6)
 
-\title[]{\Huge Container-based high-performance computing for modeling large-scale biological neural networks  \\[-0.1 in]}
+\title[]{\Huge Container-based High-Performance Computing Approaches for Simulating Large-Scale Biological Neural Networks  \\[-0.1 in]}
 \author[]{\LARGE \textbf{Oliver James} and \textbf{Sungho Hong} \\[-0.1 in] }
 \institute[]{\Large Center for Cognition and Sociality, Institute for Basic Science}
 \date{}
@@ -50,9 +64,9 @@
 
         2. However, deploying simulations of such networks across diverse HPC environments remains challenging due to software incompatibilities and complex dependencies \\[0.3 cm]
 
-3. We address this issue using singularity containers that encapsulats the entire simulation environment, enabling neuroscientists to achieve portability and reproducibility without requiring root privileges on shared HPC systems.\\[0.3 cm]
+3. We address this issue using singularity containers that encapsulats the entire simulation environment, enabling neuroscientists to achieve portability and reproducibility without requiring root privileges on HPC and cloud systems.\\[0.3 cm]
 
-4. We give a potential practical demonstrations using our cerebellar mossy fiber - granule cell network simulations.
+4. We give a practical demonstrations by benchmarking HPC environments with mossy fiber$-$granule cell network simulations.
                }
             \end{block}
             \vspace{0.5cm}
@@ -61,15 +75,15 @@
             \vspace{0.5cm}
 
 \justifying
-             {\large 1.  Container is a lightweight, standalone, and executable package that includes everything needed to run a piece of software  \\[0.3 cm]
+             {\large  Container is a lightweight, standalone, and executable package \\[ 0.5cm]
 
-              2. Run anything anywhere
+             It is designded to include everything needed to run a scientific software \\[ 2cm]
 
                }
        \centering
                \includegraphics[scale=1.4]{output1.eps}
 
-
+            \vspace{1 cm}
              %\includegraphics[scale=2.2 ]{/home/olive/Desktop/figs/tex/Paradigm_ReportOnly.eps}
             \end{block}
 
@@ -107,9 +121,6 @@
 
 
 
-
-            \vspace{-0.5 cm}
-            \centering
             %\includegraphics[scale=1.74,angle=-90]{/home/olive/Desktop/figs/tex/Fig2c.eps}
 
        \vspace{1 cm}
@@ -120,11 +131,11 @@
 \caption{Network Configuration and Simulation Parameters}
 \begin{tabular}{l@{\hspace{5cm}}l}
 \hline
-\textcolor{red}{Number of MF}         & \textcolor{red}{85600} \\
-\textcolor{violet}{Number of GRC}     & \textcolor{violet}{314000} \\
-Number of compartments                & 942000 \\
-Number of synapses                    & 990960 \\
-Simulation time                       & 2 s \\
+\textcolor{red}{Number of MF}         & \textcolor{red}{~85,600} \\
+\textcolor{violet}{Number of GRC}     & \textcolor{violet}{314,000} \\
+Number of compartments                & 942,000 \\
+Number of synapses                    & 990,960 \\
+Simulation time                       & ~~~~~~2 s \\
 \hline
 \end{tabular}
 \end{table}
@@ -132,12 +143,26 @@ Simulation time                       & 2 s \\
  \vspace{1 cm}
 
 
-            \begin{block}{\LARGE Performance Across HPC Environment}
+            \begin{block}{\LARGE Benchmarking HPC Environments}
 
              \vspace{0.5 cm}
 
+\begin{table}[htbp]
+\centering
+\caption{Performance in CPU parallel computing (30-task MPI)}
+\setlength{\tabcolsep}{30pt}
+\begin{tabular}{c c c  c }
+\hline
+CPU & Core & Solver Time (s)  & Simulator\\
+\hline
+Intel(R)-Xeon  & 30 & 564  & CORENeuron-CPU \\
+\hline
+\end{tabular}
+\end{table}
 
-\vspace{1 cm}
+
+
+\vspace{1.5 cm}
 
             \centering
             %\includegraphics[width=0.45\textwidth]{Turing.eps}
@@ -145,22 +170,35 @@ Simulation time                       & 2 s \\
             %\includegraphics[width=0.45\textwidth]{HPCcompare.eps}
 
 
-            \begin{figure}[htbp]
+\begin{figure}[htbp]
     \centering
-    \begin{minipage}[b]{0.45\textwidth}
+    \begin{subfigure}[t]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Turing.eps}
-        \caption{a. Turing architecture}
+        \caption{Turing architecture: Comparison of solver time for varying numbers of GPUs in CORENeuron-GPU simulator}
         \label{fig:turing}
-    \end{minipage}
+    \end{subfigure}
     \hfill
-    \begin{minipage}[b]{0.45\textwidth}
+    \begin{subfigure}[t]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{HPCcompare.eps}
-        \caption{b. HPC comparison}
+        \caption{Comparison of solver time between HPC environments}
         \label{fig:hpccompare}
-    \end{minipage}
+    \end{subfigure}
+    \caption{Solver time comparisons in CORENeuron simulations across HPC platforms.}
+    \label{fig:gpu-hpc-comparison}
 \end{figure}
+
+
+
+
+
+
+  \justifying
+
+{\large Turing, Volta outperform 30-core CPUs by up to 4.5x, with performance improving as GPU count increases. \\[5 mm]
+
+Volta GPUs are faster than Turing at equivalent GPU counts, offering better efficiency per device.}
 
 
             \end{block}
@@ -181,3 +219,28 @@ This work was supported by IBS-R001-D2-2023-a00
 %\end{textblock}
 
 \end{document}
+
+
+   \begin{figure}[htbp]
+    \centering
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Turing.eps}
+        \vspace{1em}
+        \caption{a. Turing architecture: Comparison of solver time for varying numbers of GPUs in CORENeuron-GPU simulator}
+
+        \label{fig:turing}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{HPCcompare.eps}
+        \caption{b. Comparison of solver time between HPC environments }
+        \label{fig:hpccompare}
+    \end{minipage}
+\end{figure}
+
+
+Previous title
+
+Container-based high-performance computing for modeling large-scale biological neural networks

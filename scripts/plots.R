@@ -17,7 +17,7 @@ karina_df <- df_plot %>% filter(System == "Turing")
 
 
 ggplot(karina_df, aes(x = factor(Resource), y = ME)) +
-  geom_col(fill = "steelblue",width = 0.6) + theme_classic() +
+  geom_col(fill = "#66c2a5",width = 0.6) + theme_classic() +
   geom_errorbar(aes(ymin = ME - SD, ymax = ME + SD), width = 0.2) +
   geom_text(aes(label = round(ME)), vjust = -0.5, size = 9) + 
   theme(legend.position= "none",
@@ -38,7 +38,9 @@ ggplot(karina_df, aes(x = factor(Resource), y = ME)) +
         legend.title = element_blank()) +
   scale_y_continuous(breaks = c(150,300),limits = c(0,350),
                      expand = c(0,0))  +
-  labs(x = "Number of GPUs", y = "Solver Time (s) ", title = "HPC: Turing.  Solver Time vs. GPUs")   
+  labs(x = "Number of GPUs", y = "Solver Time (s) ")   
+ 
+
 ggsave(file.path(save_path,'Turing.eps'),width = 8, height=9,dpi = 300) 
 
   
@@ -59,7 +61,7 @@ ggplot(compare_df, aes(x = factor(Resource), y = ME, fill =  System)) + theme_cl
   theme(legend.position= c(0.8,0.8),
         legend.key.size =  unit(1.5, "lines"),
         legend.spacing.x = unit(0.5,"mm"),
-        legend.text = element_text(size=18),
+        legend.text = element_text(size=24),
         strip.text = element_text(size = 20),  # facet text size
         #strip.background = element_blank() , 
         #strip.background =element_rect(fill = facet_colors[levels(four_rois_data$roi)], color = NA), # Apply colors
@@ -71,10 +73,14 @@ ggplot(compare_df, aes(x = factor(Resource), y = ME, fill =  System)) + theme_cl
         axis.title.x = element_text(size=28),
         axis.title.y = element_text(size=28),
         plot.title = element_text(size=28,hjust = 0.5), 
-        legend.title = element_text(size=20,hjust = 0.5,vjust=1)) +
+        legend.title = element_text(size=26,hjust = 0.5,vjust=1)) +
   scale_y_continuous(breaks = c(150,300),limits = c(0,350),
-                     expand = c(0,0))
-  
+                     expand = c(0,0))+
+  scale_fill_manual(values = c("#66c2a5" , "#fc8d62" )) 
+  #scale_fill_manual(values = c("#1f77b4", "#ff7f0e")) 
+ 
+ 
+
 ggsave(file.path(save_path,'HPCcompare.eps'),width = 8, height=9,dpi = 300) 
 
 # theme(plot.title = element_text(hjust = 0.5))
