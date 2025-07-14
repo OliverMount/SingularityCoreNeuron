@@ -4,9 +4,12 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{textpos}
-\usepackage[orientation=portrait, size=a0,scale=1.3]{beamerposter}
+\usepackage[orientation=portrait, size=a0,scale=1.2]{beamerposter}
 \usepackage{ragged2e}
 \usepackage{graphicx}
+
+\usepackage{xcolor} % in the preamble
+\definecolor{darkorchid}{HTML}{9932CC}
 
 \usepackage{bbding}
 
@@ -83,7 +86,7 @@
 
                }
        \centering
-               \includegraphics[scale=1.7]{output1.eps}
+               \includegraphics[scale=1.9]{output1.eps}
 
             \vspace{1 cm}
              %\includegraphics[scale=2.2 ]{/home/olive/Desktop/figs/tex/Paradigm_ReportOnly.eps}
@@ -104,16 +107,16 @@
 
 %################### Second column ####################
         \begin{column}{0.49\textwidth}
-            \begin{block}{\LARGE Benchmarking Data and Network*: Cerebellar Mossy Fiber $\rightarrow$  Granule Cell}
+            \begin{block}{\LARGE Benchmarking Data and Network: Cerebellar Mossy Fiber $\rightarrow$  Granule Cell}
             \centering
             \vspace{1 cm}
-            \includegraphics[scale=1.3]{CC.eps}
+            \includegraphics[scale=1.9]{CC.eps}
 
 
              %\includegraphics[width=0.99\textwidth]{/home/olive/Desktop/figs/tex/PosterEEG.eps}
             \end{block}
 
-         {\small * Nguyen, T.M., Thomas, L.A., Rhoades, J.L. et al. Structured cerebellar connectivity supports resilient pattern separation. Nature 613, 543–549 (2023)} \\[0.3 cm]
+         %{\small * Nguyen, T.M., Thomas, L.A., Rhoades, J.L. et al. Structured cerebellar connectivity supports resilient pattern separation. Nature 613, 543–549 (2023)} \\[0.3 cm]
 
        %In visible conditions, the transition from dynamic to stable coding occurs at later time points, whereas in invisible conditions, this transition manifests earlier.
 
@@ -127,6 +130,12 @@
 
        \vspace{1 cm}
 
+\justifying
+{\large  We run multiple copies ($n=80$) of the network connectivity model simultaneously to simulate extreme computational workloads. \\[3 mm]
+
+This allows us to rigorously assess the scalability and performance limits of GPUs under high-demand conditions.\\[5 mm]  }
+
+
 
 \begin{table}[htbp]
 \centering
@@ -135,9 +144,11 @@
 \hline
 \textcolor{green}{Number of MF}         & \textcolor{green}{~85,600} \\
 \textcolor{gray}{Number of GRC}     & \textcolor{gray}{314,000} \\
+\hline
 Number of compartments                & 942,000 \\
 Number of synapses                    & 990,960 \\
 Simulation time                       & ~~~~~~2 s \\
+Simulation software  &  \hspace{-2 cm} CORENeuron  \\
 \hline
 \end{tabular}
 \end{table}
@@ -201,19 +212,20 @@ Intel(R)-Xeon  & 30 & 564  & CORENeuron-CPU \\
 {\large TITAN RTX outperform 30-core CPUs by up to 4.5x, with performance improving as GPU count increases. \\[5 mm]
 
 
-{\LARGE \textbf{\textcolor{violet}{Future works: \\}}} \HandRight ~ To include more realistic model of granule layer, including Golgi cells.   \\[3 mm]
+{\LARGE \textbf{\textcolor{darkorchid}{Future works: \\}}} \HandRight ~ To include more realistic model of granule layer, including Golgi cells.   \\[3 mm]
 
 \HandRight ~ To extend the model to include Purkinje cells and other interneurons for a complete cerebellar circuit.}
 
 
             \end{block}
-
-
-
              \begin{block}{\normalsize Acknowledgment}
              \justifying
 
 This work was supported by IBS-R001-D2-2023-a00
+
+ \centering
+               \includegraphics[scale=2]{H.eps}
+
 
                \end{block}
 

@@ -7,7 +7,7 @@ df<- read.csv("results/benchmark.csv")
 df <- df %>%
   mutate(System = recode(System,
                          "Karina" = "Titan RTX  (22 GB)",
-                         "v100" = "Titan V  (12 GB)"))
+                         "v100" = "Titan V       (12 GB)"))
 
 
 df_plot<- df %>% group_by(System,Resource) %>% summarise(ME=mean(SOLVER_TIME),SD=sd(SOLVER_TIME))
@@ -65,7 +65,7 @@ ggsave(file.path(save_path,'Turing.eps'),width = 8, height=9,dpi = 300)
 compare_df <- df_plot %>% filter(Resource %in% c(1, 2))
 
 ggplot(compare_df, aes(x = factor(Resource), y = ME, fill =  System)) + theme_classic() +
-  geom_col(position = position_dodge(width = 0.8), width = 0.7) +
+  geom_col(position = position_dodge(width = 0.8), width = 0.75) +
   geom_errorbar(aes(ymin = ME - SD, ymax = ME + SD), 
                 position = position_dodge(width = 0.8), width = 0.2) + 
   geom_text(aes(label = round(ME)), 
@@ -91,7 +91,10 @@ ggplot(compare_df, aes(x = factor(Resource), y = ME, fill =  System)) + theme_cl
         legend.title = element_text(size=26,hjust = 0.5,vjust=1)) +
   scale_y_continuous(breaks = c(150,300),limits = c(0,350),
                      expand = c(0,0))+
-  scale_fill_manual(values = c("#66c2a5" , "#fc8d62" )) 
+  scale_fill_manual(values = c("#66c2a5" , "#fc8d62" )) +
+  annotate("text", x = 2.5  , y =  178, 
+           label = "(3.4x)", color = "red", size = 9)  +
+  scale_x_discrete(expand = expansion(add = 0.7)) 
   #scale_fill_manual(values = c("#1f77b4", "#ff7f0e")) 
  
  
