@@ -49,8 +49,8 @@
 %\begin{textblock}{100}(0.1,1.6)
 
 \title[]{\Huge Container-based High-Performance Computing Approaches for Simulating Large-Scale Biological Neural Networks  \\[-0.1 in]}
-\author[]{\LARGE \textbf{Oliver James} and \textbf{Sungho Hong} \\[-0.1 in] }
-\institute[]{\Large Center for Cognition and Sociality, Institute for Basic Science}
+\author[]{\LARGE \textbf{Oliver James} and \textbf{Sungho Hong $\dagger$ } \\[-0.1 in] }
+\institute[]{\Large Center for Cognition and Sociality, Institute for Basic Science;~~ $\dagger$ sunghohong@ibs.re.kr }
 \date{}
 
 
@@ -65,13 +65,13 @@
         \vspace{0 in}
             \begin{block}{\LARGE Introduction}
             \justifying
-        {\large 1. Modeling large-scale, biophysically detailed neural networks increasingly relies on high-performance computing (HPC). \\[0.5 cm]
+        {\large 1. Modeling \textbf{large-scale, biophysically detailed neural networks} increasingly relies on \textbf{high-performance computing (HPC)}. \\[0.5 cm]
 
-        2. However, deploying simulations of such networks across diverse HPC environments remains challenging due to software incompatibilities and complex dependencies. \\[0.5 cm]
+        2. However, deploying simulations of such networks across diverse HPC environments remains challenging due to \textbf{software incompatibilities} and \textbf{complex dependencies}. \\[0.5 cm]
 
-3. We address this issue using singularity containers that encapsulats the entire simulation environment, enabling neuroscientists to achieve portability and reproducibility without requiring root privileges on HPC/Cloud systems.\\[0.5 cm]
+3. We address this issue using \textbf{Singularity containers} that encapsulats the entire simulation environment, enabling neuroscientists to achieve portability and reproducibility without requiring root privileges on HPC/Cloud systems.\\[0.5 cm]
 
-4. We give a practical demonstrations by benchmarking HPC environments with cerebellar mossy fiber$-$granule cell network simulations.
+4. We give practical demonstrations by benchmarking HPC environments with \textbf{cerebellar mossy fiber$-$granule cell network} simulations.
                }
             \end{block}
             \vspace{0.5cm}
@@ -86,7 +86,7 @@
 
                }
        \centering
-               \includegraphics[scale=1.9]{output1.eps}
+               \includegraphics[scale=1.8]{output1.eps}
 
             \vspace{1 cm}
              %\includegraphics[scale=2.2 ]{/home/olive/Desktop/figs/tex/Paradigm_ReportOnly.eps}
@@ -110,7 +110,7 @@
             \begin{block}{\LARGE Benchmarking Data and Network: Cerebellar Mossy Fiber $\rightarrow$  Granule Cell}
             \centering
             \vspace{1 cm}
-            \includegraphics[scale=1.82]{CC.eps}
+            \includegraphics[scale=1.95]{CC.eps}
 
 
              %\includegraphics[width=0.99\textwidth]{/home/olive/Desktop/figs/tex/PosterEEG.eps}
@@ -131,7 +131,7 @@
        \vspace{1 cm}
 
 \justifying
-{\large  We run multiple ($n=80$) copies of the network connectivity model simultaneously to simulate extreme computational workloads. \\[3 mm]
+{\large  We run multiple copies ($n=80$) of the network connectivity model simultaneously to simulate extreme computational workloads. \\[3 mm]
 
 This allows us to rigorously assess the scalability and performance limits of GPUs under high-demand conditions.\\[5 mm]  }
 
@@ -207,28 +207,35 @@ Intel(R)-Xeon  & 30 & 564  & CORENeuron-CPU \\
 
   \justifying
 
-{\large TITAN RTX outperform 30-core CPUs by up to 4.5x, with performance improving as GPU count increases. \\[5 mm]
+{\large TITAN RTXs outperform 30-core CPUs by up to 4.5x, with performance improving as GPU count increases. \\[5 mm]
 
 
-{\LARGE \textbf{\textcolor{darkorchid}{Future works: \\}}} \HandRight ~ \textbf{Develop a biologically realistic cerebellar circuit model} including granule layer (with Golgi cells), Purkinje layer, and associated interneurons.   \\[3 mm]
+{\LARGE \textbf{\textcolor{darkorchid}{Future works: \\}}} \HandRight ~\textbf{Develop a biologically realistic cerebellar circuit model} including granule layer (with Golgi cells), Purkinje layer, and other interneurons.   \\[3 mm]
 
 \HandRight ~ \textbf{Benchmark network performance across multiple institutions} to evaluate and understand the scalability and performance limits of HPC systems.}
 
 
             \end{block}
-             \begin{block}{\Large Acknowledgment}
-             \justifying
 
-{ \large This work was supported by IBS-R001-D2-2023-a00}
+            {
+\setbeamercolor{myblock}{parent=block body} % Use Berlin block background color
 
-\begin{flushright}
+\begin{beamercolorbox}[wd=0.7\textwidth, sep=1.5ex, rounded=true, shadow=false]{myblock}
+\textbf{\Large \hspace{-12 mm} Acknowledgment}
+
+  \justifying
+  {\large This work was supported by IBS-R001-D2-2023-a00}
+
+
+\end{beamercolorbox}
+}
+\vspace{-1.6 in}
+  \begin{flushright}
     \includegraphics[scale=0.8]{H.eps}
-\end{flushright}
+  \end{flushright}
 
 
 
-
-               \end{block}
 
         \end{column}
     \end{columns}
