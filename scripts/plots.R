@@ -6,20 +6,28 @@ save_path="/media/oli/Research/Gitrepo/SingularityCoreNeuron/presentation/CBrain
 df<- read.csv("results/benchmark.csv")
 df <- df %>%
   mutate(System = recode(System,
-                         "Karina" = "Turing",
-                         "v100" = "Volta"))
+                         "Karina" = "Titan RTX  (22 GB)",
+                         "v100" = "Titan V  (12 GB)"))
 
 
 df_plot<- df %>% group_by(System,Resource) %>% summarise(ME=mean(SOLVER_TIME),SD=sd(SOLVER_TIME))
 
 # Filter for Karina only
-karina_df <- df_plot %>% filter(System == "Turing")
+karina_df <- df_plot %>% filter(System == "Titan RTX  (22 GB)")
+
+# Find the x positions for the first and last bars
+first_x <-  karina_df$Resource[1] 
+last_x  <-  karina_df$Resource[nrow(karina_df)] 
+
+# Find the y positions (mean values) for the first and last bars
+first_y <- karina_df$ME[1]
+last_y  <- karina_df$ME[nrow(karina_df)]
 
 
 ggplot(karina_df, aes(x = factor(Resource), y = ME)) +
-  geom_col(fill = "#66c2a5",width = 0.6) + theme_classic() +
+  geom_col(fill = "#66c2a5",width = 0.7) + theme_classic() +
   geom_errorbar(aes(ymin = ME - SD, ymax = ME + SD), width = 0.2) +
-  geom_text(aes(label = round(ME)), vjust = -0.5, size = 9) + 
+  geom_text(aes(label = round(ME)), vjust = -0.5, size = 9) +  
   theme(legend.position= "none",
         legend.key.size =  unit(4, "lines"),
         legend.spacing.x = unit(0.1,"mm"),
@@ -37,8 +45,15 @@ ggplot(karina_df, aes(x = factor(Resource), y = ME)) +
         plot.title = element_text(size=28,hjust = 0.5), 
         legend.title = element_blank()) +
   scale_y_continuous(breaks = c(150,300),limits = c(0,350),
-                     expand = c(0,0))  +
-  labs(x = "Number of GPUs", y = "Solver Time (s) ")   
+                     expand = c(0,0))  + 
+  scale_x_discrete(expand = expansion(add = 0.9)) +
+  labs(x = "Number of GPUs", y = "Solver Time (s) ")  +
+  annotate("text", x = first_x+0.57, y = first_y + 12, 
+           label = "(1.7x)", color = "red", size = 9) +
+  annotate("text", x = last_x+0.57 , y = last_y + 12, 
+           label = "(4.5x)", color = "red", size = 9) +
+  annotate("text", x = 3.3 , y = 300, 
+           label = "Compared to CPU run", color = "red", size = 9)
  
 
 ggsave(file.path(save_path,'Turing.eps'),width = 8, height=9,dpi = 300) 
@@ -56,9 +71,9 @@ ggplot(compare_df, aes(x = factor(Resource), y = ME, fill =  System)) + theme_cl
   geom_text(aes(label = round(ME)), 
             position = position_dodge(width = 0.8), 
             vjust = -0.5, size = 9) +
-  labs(x = "Number of GPUs", y = "Solver Time (s)", fill = "HPC env.",
+  labs(x = "Number of GPUs", y = "Solver Time (s)", fill = "HPC environment",
        title = "") +
-  theme(legend.position= c(0.8,0.8),
+  theme(legend.position= c(0.75,0.95),
         legend.key.size =  unit(1.5, "lines"),
         legend.spacing.x = unit(0.5,"mm"),
         legend.text = element_text(size=24),
