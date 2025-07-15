@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.30)  14 JUL 2025 18:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.30)  15 JUL 2025 09:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1067,15 +1067,20 @@ File: output1-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: output1-eps-converted-to.pdf  used on input line 243.
 (pdftex.def)             Requested size: 1053.33444pt x 901.56754pt.
 Package epstopdf Info: Source file: <output.eps>
-(epstopdf)                    date: 2025-07-10 18:13:15
-(epstopdf)                    size: 4337545 bytes
+(epstopdf)                    date: 2025-07-15 09:11:15
+(epstopdf)                    size: 7112297 bytes
 (epstopdf)             Output file: <output-eps-converted-to.pdf>
 (epstopdf)                    date: 2025-07-10 18:13:27
 (epstopdf)                    size: 194098 bytes
 (epstopdf)             Command: <repstopdf --outfile=output-eps-converted-to.pd
 f output.eps>
 (epstopdf)             \includegraphics on input line 243.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=output-eps-converted-to.pdf output.eps)...execute
+d safely (allowed).
+
+Package epstopdf Info: Result file: <output-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-07-15 09:11:22
+(epstopdf)                    size: 345761 bytes.
 <output-eps-converted-to.pdf, id=14, 545.03625pt x 605.26125pt>
 File: output-eps-converted-to.pdf Graphic file (type pdf)
 <use output-eps-converted-to.pdf>
@@ -1086,17 +1091,12 @@ Package epstopdf Info: Source file: <CC.eps>
 (epstopdf)                    date: 2025-07-14 18:59:29
 (epstopdf)                    size: 40914595 bytes
 (epstopdf)             Output file: <CC-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-07-14 16:33:17
-(epstopdf)                    size: 1102410 bytes
+(epstopdf)                    date: 2025-07-14 18:59:45
+(epstopdf)                    size: 1092033 bytes
 (epstopdf)             Command: <repstopdf --outfile=CC-eps-converted-to.pdf CC
 .eps>
 (epstopdf)             \includegraphics on input line 243.
-runsystem(repstopdf --outfile=CC-eps-converted-to.pdf CC.eps)...executed safely
- (allowed).
-
-Package epstopdf Info: Result file: <CC-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-07-14 18:59:45
-(epstopdf)                    size: 1092033 bytes.
+Package epstopdf Info: Output file is already uptodate.
 <CC-eps-converted-to.pdf, id=15, 594.22pt x 372.39125pt>
 File: CC-eps-converted-to.pdf Graphic file (type pdf)
 <use CC-eps-converted-to.pdf>
@@ -1207,9 +1207,9 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Presentation.pdf (1 page, 1592078 bytes).
+Output written on Presentation.pdf (1 page, 1743734 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
+ 117 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream
  8 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
