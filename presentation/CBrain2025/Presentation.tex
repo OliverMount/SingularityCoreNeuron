@@ -11,6 +11,9 @@
 \usepackage{xcolor} % in the preamble
 \definecolor{darkorchid}{HTML}{9932CC}
 
+\usepackage{array}
+\usepackage{booktabs}
+
 
 \definecolor{berlinred}{rgb}{0.82, 0.1, 0.26}
 %\definecolor{berlinred}{rgb}{0.8, 0.0, 0.0}
@@ -144,13 +147,11 @@ This allows us to rigorously assess the scalability and performance limits of GP
 \caption{Network Configuration and Simulation Parameters}
 \begin{tabular}{l@{\hspace{3cm}}c}
 \hline
-\textbf{Parameter} & \textbf{Count (Million)} \\
+\textcolor{green}{Number of MF}     & 0.30 M \\
+\textcolor{gray}{Number of GRC}     & 1.09 M \\
 \hline
-\textcolor{green}{Number of MF}     & 0.30 \\
-\textcolor{gray}{Number of GRC}     & 1.09  \\
-\hline
-Number of compartments             & 3.29  \\
-Number of synapses                & 3.47  \\
+Number of compartments             & 3.29 M \\
+Number of synapses                & 3.47 M \\
 \hline
 Simulation time                   & 1 s  \\
 Simulation software               &  CORENeuron  \\
