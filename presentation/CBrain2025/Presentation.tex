@@ -141,26 +141,34 @@
 This allows us to rigorously assess the scalability and performance limits of GPUs under high-demand conditions.\\[5 mm]  }
 
 
-
 \begin{table}[htbp]
 \centering
-\caption{Network Configuration and Simulation Parameters}
-\begin{tabular}{l@{\hspace{3cm}}c}
-\hline
-\textcolor{green}{Number of MF}     & 0.30 M \\
-\textcolor{gray}{Number of GRC}     & 1.09 M \\
-\hline
-Number of compartments             & 3.29 M \\
-Number of synapses                & 3.47 M \\
-\hline
-Simulation time                   & 1 s  \\
-Simulation software               &  CORENeuron  \\
-\hline
+\begin{minipage}{0.5\linewidth}
+\centering
+\caption{Network Configuration}
+\begin{tabular}{c@{\hspace{2cm}}c}
+\toprule
+\multicolumn{1}{c}{\textbf{Network elements}} & \multicolumn{1}{c}{\textbf{Count}} \\
+                                              & \multicolumn{1}{c}{ (millions)} \\
+\midrule
+\textcolor{green}{MF} & 0.30 \\
+\textcolor{gray}{GRC} & 1.09 \\
+Compartments & 3.29 \\
+Synapses & 3.47 \\
+\bottomrule
 \end{tabular}
+\end{minipage}%
+\begin{minipage}{0.4\linewidth}
+\centering
+\caption{Simulation Setup}
+\begin{tabular}{l@{\hspace{2cm}}r}
+\toprule
+Simulation time & 1\,s \\
+Simulation software & CoreNEURON \\
+\bottomrule
+\end{tabular}
+\end{minipage}
 \end{table}
-
-
-
 
 
 
@@ -186,14 +194,14 @@ Simulation software               &  CORENeuron  \\
 \hline
 CPU & Core & Solver Time (s)  & Simulator\\
 \hline
-Intel(R)-Xeon  & 30 & 564  & CORENeuron-CPU \\
+Intel(R)-Xeon  & 30 & 564  & CoreNEURON-CPU \\
 \hline
 \end{tabular}
 \end{table}
 
 
 
-\vspace{1.5 cm}
+\vspace{2 cm}
 
             \centering
             %\includegraphics[width=0.45\textwidth]{Turing.eps}
@@ -221,16 +229,16 @@ Intel(R)-Xeon  & 30 & 564  & CORENeuron-CPU \\
 \end{figure}
 
 
-
+\vspace{1 cm}
 
   \justifying
 
 {\large TITAN RTXs outperform 30-core CPUs by up to 4.5x, with performance improving as GPU count increases. \\[5 mm]
 
 
-{\LARGE \textbf{\textcolor{darkorchid}{Future works: \\}}} \HandRight ~\textbf{Develop a biologically realistic cerebellar circuit model} including granule layer (with Golgi cells), Purkinje layer, and other interneurons.   \\[3 mm]
+{\LARGE \textbf{\textcolor{darkorchid}{Future works: \\[5 mm]}}} \HandRight ~\textbf{Develop a biologically realistic cerebellar circuit model} including granule layer (with Golgi cells), Purkinje layer, and other interneurons.   \\[5 mm]
 
-\HandRight ~ \textbf{Benchmark network performance across multiple institutions} to evaluate and understand the scalability and performance limits of HPC systems.}
+\HandRight ~ \textbf{Benchmark network performance across multiple institutions} to evaluate and understand the scalability and performance limits of HPC systems.\\[5 mm]}
 
 
             \end{block}
@@ -274,7 +282,7 @@ Intel(R)-Xeon  & 30 & 564  & CORENeuron-CPU \\
         \centering
         \includegraphics[width=\textwidth]{Turing.eps}
         \vspace{1em}
-        \caption{a. Turing architecture: Comparison of solver time for varying numbers of GPUs in CORENeuron-GPU simulator}
+        \caption{a. Turing architecture: Comparison of solver time for varying numbers of GPUs in CoreNEURON-GPU simulator}
 
         \label{fig:turing}
     \end{minipage}
@@ -295,7 +303,7 @@ Container-based high-performance computing for modeling large-scale biological n
 \begin{table}[htbp]
 \centering
 \caption{Network Configuration and Simulation Parameters}
-\begin{tabular}{l@{\hspace{5cm}}l}
+\begin{tabular}{l@{\hspace{5cm}}c}
 \hline
 \textcolor{green}{Number of MF}         & \textcolor{green}{0.299~M} \\
 \textcolor{gray}{Number of GRC}     & \textcolor{gray}{1.09 M} \\
@@ -303,7 +311,29 @@ Container-based high-performance computing for modeling large-scale biological n
 Number of compartments                & 3.29 M \\
 Number of synapses                    & 3.47 M \\
 Simulation time                       & ~~~~~~1 s \\
-Simulation software  &  \hspace{-2 cm} CORENeuron  \\
+Simulation software  &  \hspace{-2 cm} CoreNEURON  \\
 \hline
 \end{tabular}
 \end{table}
+
+
+
+
+
+\begin{table}[htbp]
+\centering
+\caption{Network Configuration and Simulation Parameters}
+\begin{tabular}{l@{\hspace{3cm}}c}
+\hline
+\textcolor{green}{Number of MF}     & 0.30 M \\
+\textcolor{gray}{Number of GRC}     & 1.09 M \\
+\hline
+Number of compartments             & 3.29 M \\
+Number of synapses                & 3.47 M \\
+\hline
+Simulation time                   & 1 s  \\
+Simulation software               &  CORENeuron  \\
+\hline
+\end{tabular}
+\end{table}
+

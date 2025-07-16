@@ -52,9 +52,9 @@ ggplot(karina_df, aes(x = factor(Resource), y = ME)) +
   labs(x = "Number of GPUs", y = "Solver Time (s) ")  +
   annotate("text", x = first_x+0.57, y = first_y + 19, 
            label = "(1.7x)", color = "red", size = 9) +
-  annotate("text", x = last_x+0.57 , y = last_y + 12, 
+  annotate("text", x = last_x+0.58 , y = last_y + 20, 
            label = "(4.5x)", color = "red", size = 9) +
-  annotate("text", x = 3.3 , y = 450, 
+  annotate("text", x = 3.3 , y = 455, 
            label = "Compared to CPU run", color = "red", size =10)
  
 
