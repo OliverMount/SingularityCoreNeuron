@@ -3,7 +3,9 @@ library(tidyverse)
 
 save_path="/media/oli/Research/Gitrepo/SingularityCoreNeuron/presentation/CBrain2025"
 
-df<- read.csv("results/benchmark.csv")
+df<- read.csv("results/benchmark_1M.csv")
+
+ 
 df <- df %>%
   mutate(System = recode(System,
                          "Karina" = "Titan RTX  (22 GB)",
@@ -44,16 +46,16 @@ ggplot(karina_df, aes(x = factor(Resource), y = ME)) +
         axis.title.y = element_text(size=28),
         plot.title = element_text(size=28,hjust = 0.5), 
         legend.title = element_blank()) +
-  scale_y_continuous(breaks = c(150,300),limits = c(0,350),
+  scale_y_continuous(breaks = c(0,250,500),limits = c(0,550),
                      expand = c(0,0))  + 
   scale_x_discrete(expand = expansion(add = 0.9)) +
   labs(x = "Number of GPUs", y = "Solver Time (s) ")  +
-  annotate("text", x = first_x+0.57, y = first_y + 12, 
+  annotate("text", x = first_x+0.57, y = first_y + 19, 
            label = "(1.7x)", color = "red", size = 9) +
   annotate("text", x = last_x+0.57 , y = last_y + 12, 
            label = "(4.5x)", color = "red", size = 9) +
-  annotate("text", x = 3.3 , y = 300, 
-           label = "Compared to CPU run", color = "red", size = 9)
+  annotate("text", x = 3.3 , y = 450, 
+           label = "Compared to CPU run", color = "red", size =10)
  
 
 ggsave(file.path(save_path,'Turing.eps'),width = 8, height=9,dpi = 300) 
@@ -73,7 +75,7 @@ ggplot(compare_df, aes(x = factor(Resource), y = ME, fill =  System)) + theme_cl
             vjust = -0.5, size = 9) +
   labs(x = "Number of GPUs", y = "Solver Time (s)", fill = "HPC environment",
        title = "") +
-  theme(legend.position= c(0.75,0.95),
+  theme(legend.position= c(0.75,0.9),
         legend.key.size =  unit(1.5, "lines"),
         legend.spacing.x = unit(0.5,"mm"),
         legend.text = element_text(size=24),
@@ -89,10 +91,10 @@ ggplot(compare_df, aes(x = factor(Resource), y = ME, fill =  System)) + theme_cl
         axis.title.y = element_text(size=28),
         plot.title = element_text(size=28,hjust = 0.5), 
         legend.title = element_text(size=26,hjust = 0.5,vjust=1)) +
-  scale_y_continuous(breaks = c(150,300),limits = c(0,350),
+  scale_y_continuous(breaks =  c(0,250,500),limits = c(0,570),
                      expand = c(0,0))+
   scale_fill_manual(values = c("#66c2a5" , "#fc8d62" )) +
-  annotate("text", x = 2.5  , y =  178, 
+  annotate("text", x = 2.5  , y =  280, 
            label = "(3.4x)", color = "red", size = 9)  +
   scale_x_discrete(expand = expansion(add = 0.7)) 
   #scale_fill_manual(values = c("#1f77b4", "#ff7f0e")) 

@@ -133,7 +133,7 @@
        \vspace{1 cm}
 
 \justifying
-{\large  We run multiple copies ($n=80$) of the network connectivity model simultaneously to simulate extreme computational workloads. \\[3 mm]
+{\large  We run multiple copies ($n=280$) of the network connectivity model simultaneously to simulate extreme computational workloads. \\[3 mm]
 
 This allows us to rigorously assess the scalability and performance limits of GPUs under high-demand conditions.\\[5 mm]  }
 
@@ -142,18 +142,29 @@ This allows us to rigorously assess the scalability and performance limits of GP
 \begin{table}[htbp]
 \centering
 \caption{Network Configuration and Simulation Parameters}
-\begin{tabular}{l@{\hspace{5cm}}l}
+\begin{tabular}{l@{\hspace{3cm}}c}
 \hline
-\textcolor{green}{Number of MF}         & \textcolor{green}{~85,600} \\
-\textcolor{gray}{Number of GRC}     & \textcolor{gray}{314,000} \\
+\textbf{Parameter} & \textbf{Count (Million)} \\
 \hline
-Number of compartments                & 942,000 \\
-Number of synapses                    & 990,960 \\
-Simulation time                       & ~~~~~~2 s \\
-Simulation software  &  \hspace{-2 cm} CORENeuron  \\
+\textcolor{green}{Number of MF}     & 0.30 \\
+\textcolor{gray}{Number of GRC}     & 1.09  \\
+\hline
+Number of compartments             & 3.29  \\
+Number of synapses                & 3.47  \\
+\hline
+Simulation time                   & 1 s  \\
+Simulation software               &  CORENeuron  \\
 \hline
 \end{tabular}
 \end{table}
+
+
+
+
+
+
+
+
 
 %No. of mf: 299600; No. of grc: 1099000
 % 3297000
@@ -194,7 +205,7 @@ Intel(R)-Xeon  & 30 & 564  & CORENeuron-CPU \\
     \begin{subfigure}[t]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Turing.eps}
-        \caption{TITAN RTX architecture: Comparison of solver time for varying numbers of GPUs in CORENeuron-GPU simulator}
+        \caption{TITAN RTX architecture: Solver time vs. varying numbers of GPUs in CORENeuron-GPU simulator.}
         \label{fig:turing}
     \end{subfigure}
     \hfill
@@ -204,7 +215,7 @@ Intel(R)-Xeon  & 30 & 564  & CORENeuron-CPU \\
         \caption{Comparison of solver time between HPC environments}
         \label{fig:hpccompare}
     \end{subfigure}
-    \caption{Solver time comparisons in CORENeuron simulations across HPC platforms.}
+    %\caption{Solver time comparisons in CORENeuron simulations across HPC platforms.}
     \label{fig:gpu-hpc-comparison}
 \end{figure}
 
@@ -279,3 +290,19 @@ Intel(R)-Xeon  & 30 & 564  & CORENeuron-CPU \\
 Previous title
 
 Container-based high-performance computing for modeling large-scale biological neural networks
+
+\begin{table}[htbp]
+\centering
+\caption{Network Configuration and Simulation Parameters}
+\begin{tabular}{l@{\hspace{5cm}}l}
+\hline
+\textcolor{green}{Number of MF}         & \textcolor{green}{0.299~M} \\
+\textcolor{gray}{Number of GRC}     & \textcolor{gray}{1.09 M} \\
+\hline
+Number of compartments                & 3.29 M \\
+Number of synapses                    & 3.47 M \\
+Simulation time                       & ~~~~~~1 s \\
+Simulation software  &  \hspace{-2 cm} CORENeuron  \\
+\hline
+\end{tabular}
+\end{table}

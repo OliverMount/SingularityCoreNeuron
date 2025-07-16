@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.30)  15 JUL 2025 18:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.30)  16 JUL 2025 09:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1042,15 +1042,15 @@ Package caption Info: End \AtBeginDocument code.
 Package hyperref Warning: Option `pdfauthor' has already been used,
 (hyperref)                setting the option has no effect on input line 57.
 
-LaTeX Font Info:    Calculating math sizes for size <51.6> on input line 253.
+LaTeX Font Info:    Calculating math sizes for size <51.6> on input line 264.
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 253.
+ut line 264.
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-LaTeX Font Info:    Calculating math sizes for size <43> on input line 253.
-LaTeX Font Info:    Calculating math sizes for size <35.83> on input line 253.
+LaTeX Font Info:    Calculating math sizes for size <43> on input line 264.
+LaTeX Font Info:    Calculating math sizes for size <35.83> on input line 264.
 Package epstopdf Info: Source file: <output1.eps>
 (epstopdf)                    date: 2025-07-14 18:17:46
 (epstopdf)                    size: 3048830 bytes
@@ -1059,34 +1059,29 @@ Package epstopdf Info: Source file: <output1.eps>
 (epstopdf)                    size: 183729 bytes
 (epstopdf)             Command: <repstopdf --outfile=output1-eps-converted-to.p
 df output1.eps>
-(epstopdf)             \includegraphics on input line 253.
+(epstopdf)             \includegraphics on input line 264.
 Package epstopdf Info: Output file is already uptodate.
 <output1-eps-converted-to.pdf, id=13, 585.18625pt x 500.87125pt>
 File: output1-eps-converted-to.pdf Graphic file (type pdf)
 <use output1-eps-converted-to.pdf>
-Package pdftex.def Info: output1-eps-converted-to.pdf  used on input line 253.
+Package pdftex.def Info: output1-eps-converted-to.pdf  used on input line 264.
 (pdftex.def)             Requested size: 1111.84756pt x 951.64995pt.
 Package epstopdf Info: Source file: <output.eps>
 (epstopdf)                    date: 2025-07-15 18:44:52
 (epstopdf)                    size: 7181183 bytes
 (epstopdf)             Output file: <output-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-07-15 09:11:22
-(epstopdf)                    size: 345761 bytes
+(epstopdf)                    date: 2025-07-15 18:45:02
+(epstopdf)                    size: 350908 bytes
 (epstopdf)             Command: <repstopdf --outfile=output-eps-converted-to.pd
 f output.eps>
-(epstopdf)             \includegraphics on input line 253.
-runsystem(repstopdf --outfile=output-eps-converted-to.pdf output.eps)...execute
-d safely (allowed).
-
-Package epstopdf Info: Result file: <output-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-07-15 18:45:02
-(epstopdf)                    size: 350908 bytes.
+(epstopdf)             \includegraphics on input line 264.
+Package epstopdf Info: Output file is already uptodate.
 <output-eps-converted-to.pdf, id=14, 545.03625pt x 605.26125pt>
 File: output-eps-converted-to.pdf Graphic file (type pdf)
 <use output-eps-converted-to.pdf>
-Package pdftex.def Info: output-eps-converted-to.pdf  used on input line 253.
+Package pdftex.def Info: output-eps-converted-to.pdf  used on input line 264.
 (pdftex.def)             Requested size: 932.01338pt x 1034.99823pt.
-LaTeX Font Info:    Calculating math sizes for size <29.86> on input line 253.
+LaTeX Font Info:    Calculating math sizes for size <29.86> on input line 264.
 Package epstopdf Info: Source file: <CC.eps>
 (epstopdf)                    date: 2025-07-14 18:59:29
 (epstopdf)                    size: 40914595 bytes
@@ -1095,63 +1090,63 @@ Package epstopdf Info: Source file: <CC.eps>
 (epstopdf)                    size: 1092033 bytes
 (epstopdf)             Command: <repstopdf --outfile=CC-eps-converted-to.pdf CC
 .eps>
-(epstopdf)             \includegraphics on input line 253.
+(epstopdf)             \includegraphics on input line 264.
 Package epstopdf Info: Output file is already uptodate.
 <CC-eps-converted-to.pdf, id=15, 594.22pt x 372.39125pt>
 File: CC-eps-converted-to.pdf Graphic file (type pdf)
 <use CC-eps-converted-to.pdf>
-Package pdftex.def Info: CC-eps-converted-to.pdf  used on input line 253.
+Package pdftex.def Info: CC-eps-converted-to.pdf  used on input line 264.
 (pdftex.def)             Requested size: 1158.72435pt x 726.16pt.
 
-Overfull \hbox (14.08551pt too wide) in paragraph at lines 253--253
+Overfull \hbox (14.08551pt too wide) in paragraph at lines 264--264
  [][] 
  []
 
 Package epstopdf Info: Source file: <Turing.eps>
-(epstopdf)                    date: 2025-07-14 15:57:55
-(epstopdf)                    size: 6873 bytes
+(epstopdf)                    date: 2025-07-16 08:55:42
+(epstopdf)                    size: 6944 bytes
 (epstopdf)             Output file: <Turing-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-07-14 15:58:10
-(epstopdf)                    size: 11911 bytes
+(epstopdf)                    date: 2025-07-16 09:09:09
+(epstopdf)                    size: 11682 bytes
 (epstopdf)             Command: <repstopdf --outfile=Turing-eps-converted-to.pd
 f Turing.eps>
-(epstopdf)             \includegraphics on input line 253.
+(epstopdf)             \includegraphics on input line 264.
 Package epstopdf Info: Output file is already uptodate.
 <Turing-eps-converted-to.pdf, id=16, 578.16pt x 650.43pt>
 File: Turing-eps-converted-to.pdf Graphic file (type pdf)
 <use Turing-eps-converted-to.pdf>
-Package pdftex.def Info: Turing-eps-converted-to.pdf  used on input line 253.
+Package pdftex.def Info: Turing-eps-converted-to.pdf  used on input line 264.
 (pdftex.def)             Requested size: 515.08398pt x 579.49622pt.
 
 Package caption Warning: Cannot determine current font size.
 (caption)                Try setting it with `size=' explicitly on input line 2
-53.
+64.
 See the caption package documentation for explanation.
 
 Package epstopdf Info: Source file: <HPCcompare.eps>
-(epstopdf)                    date: 2025-07-14 15:57:56
-(epstopdf)                    size: 7837 bytes
+(epstopdf)                    date: 2025-07-16 09:11:20
+(epstopdf)                    size: 7887 bytes
 (epstopdf)             Output file: <HPCcompare-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-07-14 15:58:11
-(epstopdf)                    size: 12280 bytes
+(epstopdf)                    date: 2025-07-16 09:11:31
+(epstopdf)                    size: 11980 bytes
 (epstopdf)             Command: <repstopdf --outfile=HPCcompare-eps-converted-t
 o.pdf HPCcompare.eps>
-(epstopdf)             \includegraphics on input line 253.
+(epstopdf)             \includegraphics on input line 264.
 Package epstopdf Info: Output file is already uptodate.
 <HPCcompare-eps-converted-to.pdf, id=17, 578.16pt x 650.43pt>
 File: HPCcompare-eps-converted-to.pdf Graphic file (type pdf)
 <use HPCcompare-eps-converted-to.pdf>
-Package pdftex.def Info: HPCcompare-eps-converted-to.pdf  used on input line 25
-3.
+Package pdftex.def Info: HPCcompare-eps-converted-to.pdf  used on input line 26
+4.
 (pdftex.def)             Requested size: 515.08398pt x 579.49622pt.
 
 Package caption Warning: Cannot determine current font size.
 (caption)                Try setting it with `size=' explicitly on input line 2
-53.
+64.
 See the caption package documentation for explanation.
 
-LaTeX Font Info:    Trying to load font information for U+ding on input line 25
-3.
+LaTeX Font Info:    Trying to load font information for U+ding on input line 26
+4.
 (/usr/share/texlive/texmf-dist/tex/latex/bbding/Uding.fd
 File: Uding.fd 1996/02/01 v1.0 BBding font definitions
 )
@@ -1163,12 +1158,12 @@ Package epstopdf Info: Source file: <H.eps>
 (epstopdf)                    size: 51288 bytes
 (epstopdf)             Command: <repstopdf --outfile=H-eps-converted-to.pdf H.e
 ps>
-(epstopdf)             \includegraphics on input line 253.
+(epstopdf)             \includegraphics on input line 264.
 Package epstopdf Info: Output file is already uptodate.
 <H-eps-converted-to.pdf, id=18, 181.67876pt x 154.5775pt>
 File: H-eps-converted-to.pdf Graphic file (type pdf)
 <use H-eps-converted-to.pdf>
-Package pdftex.def Info: H-eps-converted-to.pdf  used on input line 253.
+Package pdftex.def Info: H-eps-converted-to.pdf  used on input line 264.
 (pdftex.def)             Requested size: 199.84723pt x 170.03575pt.
  [1
 
@@ -1195,11 +1190,11 @@ Package rerunfilecheck Info: File `Presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24600 strings out of 474222
- 470963 string characters out of 5748733
+ 24598 strings out of 474222
+ 470932 string characters out of 5748733
  1964975 words of memory out of 5000000
- 46328 multiletter control sequences out of 15000+600000
- 584394 words of font info for 130 fonts, out of 8000000 for 9000
+ 46326 multiletter control sequences out of 15000+600000
+ 584688 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,14n,123p,387b,1337s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/niceframe-type1/bbding10.pf
@@ -1207,7 +1202,7 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Presentation.pdf (1 page, 1748637 bytes).
+Output written on Presentation.pdf (1 page, 1748408 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream
