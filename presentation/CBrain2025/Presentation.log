@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.30)  16 JUL 2025 16:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.30)  17 JUL 2025 09:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -907,24 +907,24 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 (./Presentation.aux)
 \openout1 = `Presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -982,64 +982,64 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 56.
+Package hyperref Info: Link coloring OFF on input line 63.
 
 (./Presentation.out) (./Presentation.out)
 \@outlinefile=\write5
 \openout5 = `Presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 56.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 63.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 56.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 63.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 56.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 56.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 56.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 56.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 63.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 56.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 56.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 56.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 63.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 56.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 56.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 56.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 63.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 56.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 56.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 63.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 56.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 63.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 56.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 56.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 56.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 56.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 56.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 56.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 56.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 63.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 63.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 5
-6.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 6
+3.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 5
-6.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 6
+3.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 56.
+ut line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1070,17 +1070,17 @@ Package caption Info: End \AtBeginDocument code.
  (./Presentation.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 60.
+(hyperref)                setting the option has no effect on input line 67.
 
-LaTeX Font Info:    Calculating math sizes for size <51.6> on input line 273.
+LaTeX Font Info:    Calculating math sizes for size <51.6> on input line 280.
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 273.
+ut line 280.
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-LaTeX Font Info:    Calculating math sizes for size <43> on input line 273.
-LaTeX Font Info:    Calculating math sizes for size <35.83> on input line 273.
+LaTeX Font Info:    Calculating math sizes for size <43> on input line 280.
+LaTeX Font Info:    Calculating math sizes for size <35.83> on input line 280.
 Package epstopdf Info: Source file: <output1.eps>
 (epstopdf)                    date: 2025-07-14 18:17:46
 (epstopdf)                    size: 3048830 bytes
@@ -1089,12 +1089,12 @@ Package epstopdf Info: Source file: <output1.eps>
 (epstopdf)                    size: 183729 bytes
 (epstopdf)             Command: <repstopdf --outfile=output1-eps-converted-to.p
 df output1.eps>
-(epstopdf)             \includegraphics on input line 273.
+(epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
 <output1-eps-converted-to.pdf, id=13, 585.18625pt x 500.87125pt>
 File: output1-eps-converted-to.pdf Graphic file (type pdf)
 <use output1-eps-converted-to.pdf>
-Package pdftex.def Info: output1-eps-converted-to.pdf  used on input line 273.
+Package pdftex.def Info: output1-eps-converted-to.pdf  used on input line 280.
 (pdftex.def)             Requested size: 1111.84756pt x 951.64995pt.
 Package epstopdf Info: Source file: <output.eps>
 (epstopdf)                    date: 2025-07-15 18:44:52
@@ -1104,14 +1104,14 @@ Package epstopdf Info: Source file: <output.eps>
 (epstopdf)                    size: 350908 bytes
 (epstopdf)             Command: <repstopdf --outfile=output-eps-converted-to.pd
 f output.eps>
-(epstopdf)             \includegraphics on input line 273.
+(epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
 <output-eps-converted-to.pdf, id=14, 545.03625pt x 605.26125pt>
 File: output-eps-converted-to.pdf Graphic file (type pdf)
 <use output-eps-converted-to.pdf>
-Package pdftex.def Info: output-eps-converted-to.pdf  used on input line 273.
+Package pdftex.def Info: output-eps-converted-to.pdf  used on input line 280.
 (pdftex.def)             Requested size: 932.01338pt x 1034.99823pt.
-LaTeX Font Info:    Calculating math sizes for size <29.86> on input line 273.
+LaTeX Font Info:    Calculating math sizes for size <29.86> on input line 280.
 Package epstopdf Info: Source file: <CC.eps>
 (epstopdf)                    date: 2025-07-14 18:59:29
 (epstopdf)                    size: 40914595 bytes
@@ -1120,68 +1120,68 @@ Package epstopdf Info: Source file: <CC.eps>
 (epstopdf)                    size: 1092033 bytes
 (epstopdf)             Command: <repstopdf --outfile=CC-eps-converted-to.pdf CC
 .eps>
-(epstopdf)             \includegraphics on input line 273.
+(epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
 <CC-eps-converted-to.pdf, id=15, 594.22pt x 372.39125pt>
 File: CC-eps-converted-to.pdf Graphic file (type pdf)
 <use CC-eps-converted-to.pdf>
-Package pdftex.def Info: CC-eps-converted-to.pdf  used on input line 273.
+Package pdftex.def Info: CC-eps-converted-to.pdf  used on input line 280.
 (pdftex.def)             Requested size: 1158.72435pt x 726.16pt.
 
-Overfull \hbox (14.08551pt too wide) in paragraph at lines 273--273
+Overfull \hbox (14.08551pt too wide) in paragraph at lines 280--280
  [][] 
  []
 
 
-Overfull \hbox (8.18393pt too wide) in paragraph at lines 273--273
+Overfull \hbox (8.18393pt too wide) in paragraph at lines 280--280
  [][] 
  []
 
 Package epstopdf Info: Source file: <Turing.eps>
-(epstopdf)                    date: 2025-07-16 15:08:15
+(epstopdf)                    date: 2025-07-17 08:33:09
 (epstopdf)                    size: 6944 bytes
 (epstopdf)             Output file: <Turing-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-07-16 15:08:20
-(epstopdf)                    size: 11808 bytes
+(epstopdf)                    date: 2025-07-17 08:34:09
+(epstopdf)                    size: 11916 bytes
 (epstopdf)             Command: <repstopdf --outfile=Turing-eps-converted-to.pd
 f Turing.eps>
-(epstopdf)             \includegraphics on input line 273.
+(epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
 <Turing-eps-converted-to.pdf, id=16, 578.16pt x 650.43pt>
 File: Turing-eps-converted-to.pdf Graphic file (type pdf)
 <use Turing-eps-converted-to.pdf>
-Package pdftex.def Info: Turing-eps-converted-to.pdf  used on input line 273.
+Package pdftex.def Info: Turing-eps-converted-to.pdf  used on input line 280.
 (pdftex.def)             Requested size: 515.08398pt x 579.49622pt.
 
 Package caption Warning: Cannot determine current font size.
 (caption)                Try setting it with `size=' explicitly on input line 2
-73.
+80.
 See the caption package documentation for explanation.
 
 Package epstopdf Info: Source file: <HPCcompare.eps>
-(epstopdf)                    date: 2025-07-16 09:11:20
+(epstopdf)                    date: 2025-07-17 08:33:43
 (epstopdf)                    size: 7887 bytes
 (epstopdf)             Output file: <HPCcompare-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-07-16 09:11:31
-(epstopdf)                    size: 11980 bytes
+(epstopdf)                    date: 2025-07-17 08:34:09
+(epstopdf)                    size: 11971 bytes
 (epstopdf)             Command: <repstopdf --outfile=HPCcompare-eps-converted-t
 o.pdf HPCcompare.eps>
-(epstopdf)             \includegraphics on input line 273.
+(epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
 <HPCcompare-eps-converted-to.pdf, id=17, 578.16pt x 650.43pt>
 File: HPCcompare-eps-converted-to.pdf Graphic file (type pdf)
 <use HPCcompare-eps-converted-to.pdf>
-Package pdftex.def Info: HPCcompare-eps-converted-to.pdf  used on input line 27
-3.
+Package pdftex.def Info: HPCcompare-eps-converted-to.pdf  used on input line 28
+0.
 (pdftex.def)             Requested size: 515.08398pt x 579.49622pt.
 
 Package caption Warning: Cannot determine current font size.
 (caption)                Try setting it with `size=' explicitly on input line 2
-73.
+80.
 See the caption package documentation for explanation.
 
-LaTeX Font Info:    Trying to load font information for U+ding on input line 27
-3.
+LaTeX Font Info:    Trying to load font information for U+ding on input line 28
+0.
 (/usr/share/texlive/texmf-dist/tex/latex/bbding/Uding.fd
 File: Uding.fd 1996/02/01 v1.0 BBding font definitions
 )
@@ -1193,12 +1193,12 @@ Package epstopdf Info: Source file: <H.eps>
 (epstopdf)                    size: 51288 bytes
 (epstopdf)             Command: <repstopdf --outfile=H-eps-converted-to.pdf H.e
 ps>
-(epstopdf)             \includegraphics on input line 273.
+(epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
 <H-eps-converted-to.pdf, id=18, 181.67876pt x 154.5775pt>
 File: H-eps-converted-to.pdf Graphic file (type pdf)
 <use H-eps-converted-to.pdf>
-Package pdftex.def Info: H-eps-converted-to.pdf  used on input line 273.
+Package pdftex.def Info: H-eps-converted-to.pdf  used on input line 280.
 (pdftex.def)             Requested size: 199.84723pt x 170.03575pt.
  [1
 
@@ -1237,7 +1237,7 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Presentation.pdf (1 page, 1748515 bytes).
+Output written on Presentation.pdf (1 page, 1748598 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream

@@ -19,6 +19,7 @@
 %\definecolor{berlinred}{rgb}{0.8, 0.0, 0.0}
 %\definecolor{berlinred}{rgb}{0.64,0,0}
 
+
 \usepackage{bbding}
 
 %\usepackage{subfigure}
@@ -41,6 +42,7 @@
 %\usetheme{Gemini}
 
 
+
 \setbeamertemplate{headline}{}
 \setbeamertemplate{footline}{}
 
@@ -51,6 +53,11 @@
 \setbeamercolor{block body}{bg=white}
 \setbeamercolor{block title}{bg=purple}
 \setbeamercolor{title}{bg=purple}
+
+
+
+
+
 
 
 \begin{document}
@@ -146,22 +153,22 @@ This allows us to rigorously assess the scalability and performance limits of GP
 \begin{minipage}{0.5\linewidth}
 \centering
 \caption{Network Configuration}
-\begin{tabular}{c@{\hspace{2cm}}c}
+\begin{tabular}{c@{\hspace{3 cm}}c}
 \toprule
 \multicolumn{1}{c}{\textbf{Network elements}} & \multicolumn{1}{c}{\textbf{Count}} \\
                                               & \multicolumn{1}{c}{ (millions)} \\
 \midrule
-\textcolor{green}{MF} & 0.30 \\
-\textcolor{gray}{GRC} & 1.09 \\
-Compartments & 3.29 \\
-Synapses & 3.47 \\
+\textcolor{green}{MF} & 0.299 \\
+\textcolor{gray}{GRC} & 1.099 \\
+Compartments & 3.297 \\
+Synapses & 3.468 \\
 \bottomrule
 \end{tabular}
 \end{minipage}%
 \begin{minipage}{0.4\linewidth}
 \centering
 \caption{Simulation Setup}
-\begin{tabular}{l@{\hspace{2cm}}r}
+\begin{tabular}{l@{\hspace{2cm}}c}
 \toprule
 Simulation time & 1\,s \\
 Simulation software & CoreNEURON \\
@@ -194,7 +201,7 @@ Simulation software & CoreNEURON \\
 \hline
 CPU & Core & Solver Time (s)  & Simulator\\
 \hline
-Intel(R)-Xeon  & 30 & 564  & CoreNEURON-CPU \\
+Intel(R)-Xeon  & 30 & 1670  & CoreNEURON-CPU \\
 \hline
 \end{tabular}
 \end{table}
@@ -233,7 +240,7 @@ Intel(R)-Xeon  & 30 & 564  & CoreNEURON-CPU \\
 
   \justifying
 
-{\large TITAN RTXs outperform 30-core CPUs by up to 4.5x, with performance improving as GPU count increases. \\[5 mm]
+{\large TITAN RTXs outperform 30-core CPUs by up to 9.8x, with performance improving as GPU count increases. \\[5 mm]
 
 
 {\LARGE \textbf{\textcolor{darkorchid}{Future works: \\[5 mm]}}} \HandRight ~\textbf{Develop a biologically realistic cerebellar circuit model} including granule layer (with Golgi cells), Purkinje layer, and other interneurons.   \\[5 mm]

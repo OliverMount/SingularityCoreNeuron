@@ -51,9 +51,9 @@ ggplot(karina_df, aes(x = factor(Resource), y = ME)) +
   scale_x_discrete(expand = expansion(add = 0.9)) +
   labs(x = "Number of GPUs", y = "Solver Time (s) ")  +
   annotate("text", x = first_x+0.57, y = first_y + 19, 
-           label = "(1.7x)", color = "red", size = 9) +
+           label = "(3.4x)", color = "red", size = 9) +
   annotate("text", x = last_x+0.58 , y = last_y + 20, 
-           label = "(4.5x)", color = "red", size = 9) +
+           label = "(9.8x)", color = "red", size = 9) +
   annotate("text", x = 3.3 , y = 455, 
            label = "Compared to CPU run", color = "red", size =10)
  
@@ -94,8 +94,8 @@ ggplot(compare_df, aes(x = factor(Resource), y = ME, fill =  System)) + theme_cl
   scale_y_continuous(breaks =  c(0,250,500),limits = c(0,570),
                      expand = c(0,0))+
   scale_fill_manual(values = c("#66c2a5" , "#fc8d62" )) +
-  annotate("text", x = 2.5  , y =  280, 
-           label = "(3.4x)", color = "red", size = 9)  +
+  annotate("text", x = 2.53  , y =  270, 
+           label = "(6.7x)", color = "red", size = 9)  +
   scale_x_discrete(expand = expansion(add = 0.7)) 
   #scale_fill_manual(values = c("#1f77b4", "#ff7f0e")) 
  
