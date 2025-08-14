@@ -101,6 +101,7 @@ From: ubuntu:24.04
     cd /
     rm -rf /opt/nvhpc_2025_255_Linux_x86_64_cuda_12.9*
     rm -rf /opt/nvhpc_sdk.tar.gz
+	rm -rf /opt/openmpi-4.1.6.tar.gz
 
     echo ">>> INSTALLING CORE NEURON..."
     cd /opt/nrn/build
@@ -112,7 +113,7 @@ From: ubuntu:24.04
         -DCMAKE_INSTALL_PREFIX=/opt/nrn-install \
         -DCMAKE_C_COMPILER=nvc \
         -DCMAKE_CXX_COMPILER=nvc++ \
-        -DCMAKE_CUDA_ARCHITECTURES="75" \
+        -DCMAKE_CUDA_ARCHITECTURES="70" \
         -DCMAKE_CXX_FLAGS="-O3 -g" \
         -DCMAKE_C_FLAGS="-O3 -g" \
         -DCMAKE_BUILD_TYPE=Custom
@@ -127,15 +128,17 @@ From: ubuntu:24.04
     PYLIB=$(find /usr/lib /lib /usr/local/lib -name "libpython3.*.so" | grep -m1 -E "libpython3\.[0-9]+\.so")
     export NMODL_PYLIB=$PYLIB
     echo ">>> NMODL_PYLIB set to: $NMODL_PYLIB" 
+    
 
     # --- Make persistent in container environment ---
     echo "export NMODL_PYLIB=$NMODL_PYLIB" >> $SINGULARITY_ENVIRONMENT
     echo "export NMODLHOME=/opt/nrn-install" >> $SINGULARITY_ENVIRONMENT
     
     #export NMODL_PYLIB=/usr/lib/x86_64-linux-gnu/libpython3.12.so  # This was obtained after it sandbox check
-     
+    
     rm -rf /opt/openmpi-4.1.6
     rm -rf /opt/nrn
+     
 
 %environment
     # Activate Python virtual environment automatically
