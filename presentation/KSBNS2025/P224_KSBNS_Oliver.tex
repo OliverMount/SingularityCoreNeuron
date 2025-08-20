@@ -4,7 +4,14 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{textpos}
-\usepackage[orientation=portrait, size=a0,scale=1.2]{beamerposter}
+\usepackage[orientation=landscape, width=1700 mm, height=1000 mm,scale=1.5]{beamerposter}
+
+
+\setlength{\paperwidth}{1700mm}
+\setlength{\paperheight}{1000mm}
+\setlength{\textwidth}{1660mm}    % 20mm margin left/right
+\setlength{\textheight}{960mm}    % 20mm margin top/bottom
+
 \usepackage{ragged2e}
 \usepackage{graphicx}
 
@@ -56,10 +63,6 @@
 
 
 
-
-
-
-
 \begin{document}
 %\begin{textblock}{100}(0.1,1.6)
 
@@ -71,24 +74,26 @@
 
 
 \begin{frame}
-\vspace{-0.4 in}
+%\vspace{-0.4 in}
 \maketitle
 
  \begin{columns}
         % First column
-        \begin{column}{0.49\linewidth}
-        \vspace{-0.3 in}
+        \begin{column}{0.30 \linewidth}
+        \vspace{-20 in}
             \begin{block}{\LARGE Introduction}
             \justifying
-        {\large 1. Modeling \textbf{large-scale, biophysically detailed neural networks} increasingly relies on \textbf{high-performance computing (HPC)}. \\[0.5 cm]
+        {\large 1. Modeling \textbf{large-scale, biophysically detailed neural networks} increasingly relies on \textbf{high-performance computing (HPC)}. \\[1.5 cm]
 
-        2. However, deploying simulations of such networks across diverse HPC environments remains challenging due to \textbf{software incompatibilities} and \textbf{complex dependencies}. \\[0.5 cm]
+        2. However, deploying simulations of such networks across diverse HPC environments remains challenging due to \textbf{software incompatibilities} and \textbf{complex dependencies}. \\[1.5 cm]
 
-3. We address this issue using \textbf{Singularity containers} that encapsulats the entire simulation environment, enabling neuroscientists to achieve portability and reproducibility without requiring root privileges on HPC/Cloud systems.\\[0.5 cm]
+3. We address this issue using \textbf{Singularity containers} that encapsulats the entire simulation environment, enabling neuroscientists to achieve portability and reproducibility without requiring root privileges on HPC/Cloud systems.\\[1.5 cm]
 
 4. We give practical demonstrations by benchmarking HPC environments with \textbf{cerebellar mossy fiber$-$granule cell network} simulations.
                }
             \end{block}
+
+
             \vspace{0.5cm}
             \begin{block}{\LARGE Containerization for Scientific Computing}
             \centering
@@ -104,7 +109,15 @@
              %\includegraphics[scale=2.2 ]{/home/olive/Desktop/figs/tex/Paradigm_ReportOnly.eps}
             \end{block}
 
-            \begin{block}{\LARGE Our Computational Framework}
+
+             %\vspace{0.5cm}
+        \end{column}
+
+
+%################### Second column ####################
+        \begin{column}{0.30\textwidth}
+    \vspace{-18  in}
+                \begin{block}{\LARGE Our Computational Framework}
              \vspace{2 cm}
 
 
@@ -114,11 +127,23 @@
 
 
 
-             \vspace{0.5cm}
-        \end{column}
 
-%################### Second column ####################
-        \begin{column}{0.49\textwidth}
+
+            \begin{block}{\LARGE Benchmarking Data and Network: Cerebellar Mossy Fiber $\rightarrow$  Granule Cell}
+            \centering
+            \vspace{1 cm}
+            \includegraphics[scale=1.95]{../CBrain2025/CC.eps}
+
+
+             %\includegraphics[width=0.99\textwidth]{/home/olive/Desktop/figs/tex/PosterEEG.eps}
+            \end{block}
+
+     \end{column}
+
+
+
+%################### Third column ####################
+        \begin{column}{0.30\textwidth}
             \begin{block}{\LARGE Benchmarking Data and Network: Cerebellar Mossy Fiber $\rightarrow$  Granule Cell}
             \centering
             \vspace{1 cm}
