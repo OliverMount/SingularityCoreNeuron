@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.30)  20 AUG 2025 09:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.30)  20 AUG 2025 10:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1081,129 +1081,107 @@ thkerncmss.
 )
 LaTeX Font Info:    Calculating math sizes for size <43> on input line 280.
 LaTeX Font Info:    Calculating math sizes for size <35.83> on input line 280.
-
-
-LaTeX Warning: File `output1.eps' not found on input line 280.
-
-Package epstopdf Info: Source file: <output1.eps>
-(epstopdf)             Output file: <output1-eps-converted-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=output1-eps-converted-to.p
-df output1.eps>
+Package epstopdf Info: Source file: <../CBrain2025/output1.eps>
+(epstopdf)                    date: 2025-07-14 18:17:46
+(epstopdf)                    size: 3048830 bytes
+(epstopdf)             Output file: <../CBrain2025/output1-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2025-07-14 18:17:55
+(epstopdf)                    size: 183729 bytes
+(epstopdf)             Command: <repstopdf --outfile=../CBrain2025/output1-eps-
+converted-to.pdf ../CBrain2025/output1.eps>
 (epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
+<../CBrain2025/output1-eps-converted-to.pdf, id=13, 585.18625pt x 500.87125pt>
+File: ../CBrain2025/output1-eps-converted-to.pdf Graphic file (type pdf)
+<use ../CBrain2025/output1-eps-converted-to.pdf>
+Package pdftex.def Info: ../CBrain2025/output1-eps-converted-to.pdf  used on in
+put line 280.
+(pdftex.def)             Requested size: 1111.84756pt x 951.64995pt.
+Package epstopdf Info: Source file: <../CBrain2025/output.eps>
+(epstopdf)                    date: 2025-07-15 18:44:52
+(epstopdf)                    size: 7181183 bytes
+(epstopdf)             Output file: <../CBrain2025/output-eps-converted-to.pdf>
 
-! Package pdftex.def Error: File `output1-eps-converted-to.pdf' not found: usin
-g draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.280 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `output.eps' not found on input line 280.
-
-Package epstopdf Info: Source file: <output.eps>
-(epstopdf)             Output file: <output-eps-converted-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=output-eps-converted-to.pd
-f output.eps>
+(epstopdf)                    date: 2025-07-15 18:45:02
+(epstopdf)                    size: 350908 bytes
+(epstopdf)             Command: <repstopdf --outfile=../CBrain2025/output-eps-c
+onverted-to.pdf ../CBrain2025/output.eps>
 (epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
-
-! Package pdftex.def Error: File `output-eps-converted-to.pdf' not found: using
- draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.280 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<../CBrain2025/output-eps-converted-to.pdf, id=14, 545.03625pt x 605.26125pt>
+File: ../CBrain2025/output-eps-converted-to.pdf Graphic file (type pdf)
+<use ../CBrain2025/output-eps-converted-to.pdf>
+Package pdftex.def Info: ../CBrain2025/output-eps-converted-to.pdf  used on inp
+ut line 280.
+(pdftex.def)             Requested size: 932.01338pt x 1034.99823pt.
 LaTeX Font Info:    Calculating math sizes for size <29.86> on input line 280.
-
-LaTeX Warning: File `CC.eps' not found on input line 280.
-
-Package epstopdf Info: Source file: <CC.eps>
-(epstopdf)             Output file: <CC-eps-converted-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=CC-eps-converted-to.pdf CC
-.eps>
+Package epstopdf Info: Source file: <../CBrain2025/CC.eps>
+(epstopdf)                    date: 2025-07-14 18:59:29
+(epstopdf)                    size: 40914595 bytes
+(epstopdf)             Output file: <../CBrain2025/CC-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-07-14 18:59:45
+(epstopdf)                    size: 1092033 bytes
+(epstopdf)             Command: <repstopdf --outfile=../CBrain2025/CC-eps-conve
+rted-to.pdf ../CBrain2025/CC.eps>
 (epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
+<../CBrain2025/CC-eps-converted-to.pdf, id=15, 594.22pt x 372.39125pt>
+File: ../CBrain2025/CC-eps-converted-to.pdf Graphic file (type pdf)
+<use ../CBrain2025/CC-eps-converted-to.pdf>
+Package pdftex.def Info: ../CBrain2025/CC-eps-converted-to.pdf  used on input l
+ine 280.
+(pdftex.def)             Requested size: 1158.72435pt x 726.16pt.
 
-! Package pdftex.def Error: File `CC-eps-converted-to.pdf' not found: using dra
-ft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.280 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (14.08551pt too wide) in paragraph at lines 280--280
+ [][] 
+ []
 
 
 Overfull \hbox (8.18393pt too wide) in paragraph at lines 280--280
  [][] 
  []
 
+Package epstopdf Info: Source file: <../CBrain2025/Turing.eps>
+(epstopdf)                    date: 2025-07-17 08:33:09
+(epstopdf)                    size: 6944 bytes
+(epstopdf)             Output file: <../CBrain2025/Turing-eps-converted-to.pdf>
 
-LaTeX Warning: File `Turing.eps' not found on input line 280.
-
-Package epstopdf Info: Source file: <Turing.eps>
-(epstopdf)             Output file: <Turing-eps-converted-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=Turing-eps-converted-to.pd
-f Turing.eps>
+(epstopdf)                    date: 2025-07-17 08:34:09
+(epstopdf)                    size: 11916 bytes
+(epstopdf)             Command: <repstopdf --outfile=../CBrain2025/Turing-eps-c
+onverted-to.pdf ../CBrain2025/Turing.eps>
 (epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
-
-! Package pdftex.def Error: File `Turing-eps-converted-to.pdf' not found: using
- draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.280 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<../CBrain2025/Turing-eps-converted-to.pdf, id=16, 578.16pt x 650.43pt>
+File: ../CBrain2025/Turing-eps-converted-to.pdf Graphic file (type pdf)
+<use ../CBrain2025/Turing-eps-converted-to.pdf>
+Package pdftex.def Info: ../CBrain2025/Turing-eps-converted-to.pdf  used on inp
+ut line 280.
+(pdftex.def)             Requested size: 515.08398pt x 579.49622pt.
 
 Package caption Warning: Cannot determine current font size.
 (caption)                Try setting it with `size=' explicitly on input line 2
 80.
 See the caption package documentation for explanation.
 
-
-LaTeX Warning: File `HPCcompare.eps' not found on input line 280.
-
-Package epstopdf Info: Source file: <HPCcompare.eps>
-(epstopdf)             Output file: <HPCcompare-eps-converted-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=HPCcompare-eps-converted-t
-o.pdf HPCcompare.eps>
+Package epstopdf Info: Source file: <../CBrain2025/HPCcompare.eps>
+(epstopdf)                    date: 2025-07-17 08:33:43
+(epstopdf)                    size: 7887 bytes
+(epstopdf)             Output file: <../CBrain2025/HPCcompare-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2025-07-17 08:34:09
+(epstopdf)                    size: 11971 bytes
+(epstopdf)             Command: <repstopdf --outfile=../CBrain2025/HPCcompare-e
+ps-converted-to.pdf ../CBrain2025/HPCcompare.eps>
 (epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
-
-! Package pdftex.def Error: File `HPCcompare-eps-converted-to.pdf' not found: u
-sing draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.280 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<../CBrain2025/HPCcompare-eps-converted-to.pdf, id=17, 578.16pt x 650.43pt>
+File: ../CBrain2025/HPCcompare-eps-converted-to.pdf Graphic file (type pdf)
+<use ../CBrain2025/HPCcompare-eps-converted-to.pdf>
+Package pdftex.def Info: ../CBrain2025/HPCcompare-eps-converted-to.pdf  used on
+ input line 280.
+(pdftex.def)             Requested size: 515.08398pt x 579.49622pt.
 
 Package caption Warning: Cannot determine current font size.
 (caption)                Try setting it with `size=' explicitly on input line 2
@@ -1215,31 +1193,28 @@ LaTeX Font Info:    Trying to load font information for U+ding on input line 28
 (/usr/share/texlive/texmf-dist/tex/latex/bbding/Uding.fd
 File: Uding.fd 1996/02/01 v1.0 BBding font definitions
 )
-
-LaTeX Warning: File `H.eps' not found on input line 280.
-
-Package epstopdf Info: Source file: <H.eps>
-(epstopdf)             Output file: <H-eps-converted-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=H-eps-converted-to.pdf H.e
-ps>
+Package epstopdf Info: Source file: <../CBrain2025/H.eps>
+(epstopdf)                    date: 2025-07-14 18:41:50
+(epstopdf)                    size: 357479 bytes
+(epstopdf)             Output file: <../CBrain2025/H-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-07-14 18:41:59
+(epstopdf)                    size: 51288 bytes
+(epstopdf)             Command: <repstopdf --outfile=../CBrain2025/H-eps-conver
+ted-to.pdf ../CBrain2025/H.eps>
 (epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
+<../CBrain2025/H-eps-converted-to.pdf, id=18, 181.67876pt x 154.5775pt>
+File: ../CBrain2025/H-eps-converted-to.pdf Graphic file (type pdf)
+<use ../CBrain2025/H-eps-converted-to.pdf>
+Package pdftex.def Info: ../CBrain2025/H-eps-converted-to.pdf  used on input li
+ne 280.
+(pdftex.def)             Requested size: 199.84723pt x 170.03575pt.
+ [1
 
-! Package pdftex.def Error: File `H-eps-converted-to.pdf' not found: using draf
-t setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.280 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../CBrain2025/output1-eps-
+converted-to.pdf> <../CBrain2025/output-eps-converted-to.pdf> <../CBrain2025/CC
+-eps-converted-to.pdf> <../CBrain2025/Turing-eps-converted-to.pdf> <../CBrain20
+25/HPCcompare-eps-converted-to.pdf> <../CBrain2025/H-eps-converted-to.pdf>]
 \tf@nav=\write6
 \openout6 = `P224_KSBNS_Oliver.nav'.
 
@@ -1249,7 +1224,8 @@ If that doesn't work, type  X <return>  to quit.
 \tf@snm=\write8
 \openout8 = `P224_KSBNS_Oliver.snm'.
 
- (./P224_KSBNS_Oliver.aux)
+
+(./P224_KSBNS_Oliver.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1258,23 +1234,22 @@ Package rerunfilecheck Info: File `P224_KSBNS_Oliver.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24873 strings out of 474222
- 475403 string characters out of 5748733
+ 24732 strings out of 474222
+ 473686 string characters out of 5748733
  1966975 words of memory out of 5000000
- 46594 multiletter control sequences out of 15000+600000
- 584857 words of font info for 132 fonts, out of 8000000 for 9000
+ 46454 multiletter control sequences out of 15000+600000
+ 584688 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,14n,123p,392b,1337s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/niceframe-type1/bbding10.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on P224_KSBNS_Oliver.pdf (1 page, 67683 bytes).
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on P224_KSBNS_Oliver.pdf (1 page, 1748672 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 118 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  8 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
