@@ -4,7 +4,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{textpos}
-\usepackage[orientation=landscape, width=1700 mm, height=1000 mm,scale=1.5]{beamerposter}
+\usepackage[orientation=landscape, width=1700 mm, height=1000 mm,scale=1.4]{beamerposter}
 
 
 \setlength{\paperwidth}{1700mm}
@@ -74,15 +74,22 @@
 
 
 \begin{frame}
-%\vspace{-0.4 in}
+
+  \begin{flushleft}
+    \includegraphics[scale=14]{logo.eps}
+  \end{flushleft}
+
+\vspace{-5.2  in}
 \maketitle
+
 
  \begin{columns}
         % First column
         \begin{column}{0.30 \linewidth}
-        \vspace{-8 in}
+        \vspace{-1 in}
             \begin{block}{\LARGE Introduction}
             \justifying
+               \vspace{1 in}
         {\large 1. Modeling \textbf{large-scale, biophysically detailed neural networks} increasingly relies on \textbf{high-performance computing (HPC)}. \\[1.5 cm]
 
         2. However, deploying simulations of such networks across diverse HPC environments remains challenging due to \textbf{software incompatibilities} and \textbf{complex dependencies}. \\[1.5 cm]
@@ -94,29 +101,29 @@
             \end{block}
 
 
-            \vspace{0.5cm}
+            \vspace{ 1 in }
             \begin{block}{\LARGE Containerization for Scientific Computing}
             \centering
-            \vspace{0.5cm}
 
+\vspace{ 1 in }
 \justifying
-             {\large  A container is a lightweight, standalone, virtualized executable environment that includes all dependencies required to run large-scale scientific models. \\[10 mm]
+             {\large  \textbf{A container is a lightweight, standalone, virtualized executable environment} that includes all dependencies required to run large-scale scientific models. \\[2 in ]
                }
        \centering
-               \includegraphics[scale=1.9]{../CBrain2025/output1.eps}
+               \includegraphics[scale=2.2]{../CBrain2025/output1.eps}
 
-            \vspace{1 cm}
+
              %\includegraphics[scale=2.2 ]{/home/olive/Desktop/figs/tex/Paradigm_ReportOnly.eps}
             \end{block}
 
 
-             %\vspace{0.5cm}
+
         \end{column}
 
 
 %################### Second column ####################
         \begin{column}{0.30\textwidth}
-    \vspace{-8  in}
+    \vspace{-2  in}
                 \begin{block}{\LARGE Our Computational Framework}
              \vspace{2 cm}
 
@@ -124,9 +131,6 @@
             \centering
                \includegraphics[scale=1.71]{../CBrain2025/output.eps}
             \end{block}
-
-
-
 
 
             \begin{block}{\LARGE Benchmarking Data and Network: Cerebellar Mossy Fiber $\rightarrow$  Granule Cell}
@@ -140,7 +144,7 @@
 
 
             \justifying
-{\large  We run multiple copies ($n=280$) of the network connectivity model simultaneously to simulate extreme computational workloads. \\[3 mm]
+{\large  We run multiple copies ($n=280$) of the network connectivity model simultaneously to simulate extreme computational workloads. \\[1 in ]
 
 This allows us to rigorously assess the scalability and performance limits of GPUs under high-demand conditions.\\[5 mm]  }
 
@@ -167,20 +171,14 @@ This allows us to rigorously assess the scalability and performance limits of GP
 
 
 
-
-
-
-
 %No. of mf: 299600; No. of grc: 1099000
 % 3297000
 % 3468360
 % 1s
 
+\begin{block}{\LARGE Benchmarking HPC Environments}
 
-
-            \begin{block}{\LARGE Benchmarking HPC Environments}
-
-                    \begin{table}[htbp]
+\begin{table}[htbp]
 \centering
 \begin{minipage}{0.5\linewidth}
 \centering

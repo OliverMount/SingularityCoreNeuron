@@ -104,3 +104,12 @@ ggplot(compare_df, aes(x = factor(Resource), y = ME, fill =  System)) + theme_cl
 ggsave(file.path(save_path,'HPCcompare.eps'),width = 8, height=9,dpi = 300) 
 
 # theme(plot.title = element_text(hjust = 0.5))
+
+
+
+
+###############################################################################
+# model building compuation time for 1M cells
+
+
+
