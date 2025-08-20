@@ -56,9 +56,9 @@ ggplot(karina_df, aes(x = factor(Resource), y = ME)) +
   annotate("text", x = first_x+0.57, y = first_y + 19, 
            label = "(3.4x)", color = "red", size = 9) +
   annotate("text", x = last_x+0.58 , y = last_y + 20, 
-           label = "(9.8x)", color = "red", size = 9) +
-  annotate("text", x = 3.3 , y = 455, 
-           label = "Compared to CPU run", color = "red", size =10)
+           label = "(9.8x)", color = "red", size = 9) #+
+  #annotate("text", x = 3.3 , y = 455, 
+  #         label = "Compared to CPU run", color = "red", size =10)
  
 
 ggsave(file.path(save_path,'Turing.eps'),width = 8, height=9,dpi = 300) 
@@ -169,9 +169,10 @@ ggplot(karina_df, aes(x = factor(Resource), y = ME)) +
            label = "(2.9x)", color = "red", size = 9) +
   annotate("text", x = last_x+0.58 , y = last_y + 15, 
            label = "(8.4x)", color = "red", size = 9) +
-  annotate("text", x = 3.3 , y = 455, 
-           label = "Compared to CPU run", color = "red", size =10)
-
+  annotate("text", x = 3.3 , y = 350, 
+           label = "Compared to CPU run", color = "red", size =10) +
+  annotate("text", x = 3.3 , y = 425, 
+           label = "Titan RTX", color = "blue", size =10)   
 
 ggsave(file.path(save_path,'Turing_ModelBuilding.eps'),width = 8, height=9,dpi = 300) 
 
@@ -211,8 +212,8 @@ ggplot(compare_df, aes(x = factor(Resource), y = ME, fill =  System)) + theme_cl
   annotate("text", x = 2.53  , y =  187, 
            label = "(6.8x)", color = "red", size = 9)  +
   scale_x_discrete(expand = expansion(add = 0.7)) 
-#scale_fill_manual(values = c("#1f77b4", "#ff7f0e")) 
-
+#scale_fill_manual(values = c("#1f77b4", "#ff7f0e"))  
 
 
 ggsave(file.path(save_path,'HPCcompare_ModelBuilding.eps'),width = 8, height=9,dpi = 300) 
+
