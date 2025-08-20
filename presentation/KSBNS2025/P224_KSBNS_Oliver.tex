@@ -80,7 +80,7 @@
  \begin{columns}
         % First column
         \begin{column}{0.30 \linewidth}
-        \vspace{-20 in}
+        \vspace{-8 in}
             \begin{block}{\LARGE Introduction}
             \justifying
         {\large 1. Modeling \textbf{large-scale, biophysically detailed neural networks} increasingly relies on \textbf{high-performance computing (HPC)}. \\[1.5 cm]
@@ -116,7 +116,7 @@
 
 %################### Second column ####################
         \begin{column}{0.30\textwidth}
-    \vspace{-18  in}
+    \vspace{-8  in}
                 \begin{block}{\LARGE Our Computational Framework}
              \vspace{2 cm}
 
@@ -138,20 +138,20 @@
              %\includegraphics[width=0.99\textwidth]{/home/olive/Desktop/figs/tex/PosterEEG.eps}
             \end{block}
 
+
+            \justifying
+{\large  We run multiple copies ($n=280$) of the network connectivity model simultaneously to simulate extreme computational workloads. \\[3 mm]
+
+This allows us to rigorously assess the scalability and performance limits of GPUs under high-demand conditions.\\[5 mm]  }
+
+
+
      \end{column}
-
-
 
 %################### Third column ####################
         \begin{column}{0.30\textwidth}
-            \begin{block}{\LARGE Benchmarking Data and Network: Cerebellar Mossy Fiber $\rightarrow$  Granule Cell}
-            \centering
-            \vspace{1 cm}
-            \includegraphics[scale=1.95]{../CBrain2025/CC.eps}
 
 
-             %\includegraphics[width=0.99\textwidth]{/home/olive/Desktop/figs/tex/PosterEEG.eps}
-            \end{block}
 
          %{\small * Nguyen, T.M., Thomas, L.A., Rhoades, J.L. et al. Structured cerebellar connectivity supports resilient pattern separation. Nature 613, 543–549 (2023)} \\[0.3 cm]
 
@@ -165,15 +165,22 @@
 
             %\includegraphics[scale=1.74,angle=-90]{/home/olive/Desktop/figs/tex/Fig2c.eps}
 
-       \vspace{1 cm}
-
-\justifying
-{\large  We run multiple copies ($n=280$) of the network connectivity model simultaneously to simulate extreme computational workloads. \\[3 mm]
-
-This allows us to rigorously assess the scalability and performance limits of GPUs under high-demand conditions.\\[5 mm]  }
 
 
-\begin{table}[htbp]
+
+
+
+
+%No. of mf: 299600; No. of grc: 1099000
+% 3297000
+% 3468360
+% 1s
+
+
+
+            \begin{block}{\LARGE Benchmarking HPC Environments}
+
+                    \begin{table}[htbp]
 \centering
 \begin{minipage}{0.5\linewidth}
 \centering
@@ -206,17 +213,6 @@ Simulation software & CoreNEURON \\
 
 
 
-
-%No. of mf: 299600; No. of grc: 1099000
-% 3297000
-% 3468360
-% 1s
- \vspace{1 cm}
-
-
-            \begin{block}{\LARGE Benchmarking HPC Environments}
-
-             \vspace{0.5 cm}
 
 \begin{table}[htbp]
 \centering
