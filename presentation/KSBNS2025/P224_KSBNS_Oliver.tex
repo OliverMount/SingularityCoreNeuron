@@ -76,10 +76,10 @@
 \begin{frame}
 
   \begin{flushleft}
-    \includegraphics[scale=14]{logo.eps}
+    \includegraphics[scale=11]{logo.eps}
   \end{flushleft}
 
-\vspace{-5.2  in}
+\vspace{-3.2  in}
 \maketitle
 
 
@@ -87,6 +87,7 @@
         % First column
         \begin{column}{0.30 \linewidth}
         \vspace{-1 in}
+
             \begin{block}{\LARGE Introduction}
             \justifying
                \vspace{1 in}
@@ -115,8 +116,6 @@
 
              %\includegraphics[scale=2.2 ]{/home/olive/Desktop/figs/tex/Paradigm_ReportOnly.eps}
             \end{block}
-
-
 
         \end{column}
 
@@ -157,25 +156,6 @@ This allows us to rigorously assess the scalability and performance limits of GP
 
 
 
-         %{\small * Nguyen, T.M., Thomas, L.A., Rhoades, J.L. et al. Structured cerebellar connectivity supports resilient pattern separation. Nature 613, 543–549 (2023)} \\[0.3 cm]
-
-       %In visible conditions, the transition from dynamic to stable coding occurs at later time points, whereas in invisible conditions, this transition manifests earlier.
-
-
-
-          %Visible conditions are characterized by strong dynamic neural coding, whereas invisible conditions exhibit early stable neural representations of the stimulus.
-
-
-
-            %\includegraphics[scale=1.74,angle=-90]{/home/olive/Desktop/figs/tex/Fig2c.eps}
-
-
-
-%No. of mf: 299600; No. of grc: 1099000
-% 3297000
-% 3468360
-% 1s
-
 \begin{block}{\LARGE Benchmarking HPC Environments}
 
 \begin{table}[htbp]
@@ -208,46 +188,44 @@ Simulation software & CoreNEURON \\
 \end{table}
 
 
-
-
-
-
-\begin{table}[htbp]
-\centering
-\caption{Performance in CPU parallel computing (30-task MPI)}
-\setlength{\tabcolsep}{30pt}
-\begin{tabular}{c c c  c }
-\hline
-CPU & Core & Solver Time (s)  & Simulator\\
-\hline
-Intel(R)-Xeon  & 30 & 1670  & CoreNEURON-CPU \\
-\hline
-\end{tabular}
-\end{table}
-
-
-
-\vspace{2 cm}
-
             \centering
             %\includegraphics[width=0.45\textwidth]{Turing.eps}
 
             %\includegraphics[width=0.45\textwidth]{HPCcompare.eps}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[scale=0.95]{Turing_ModelBuilding.eps}
+        %\caption{TITAN RTX architecture: Model Building vs. varying numbers of GPUs in CORENeuron-GPU simulator.}
+        \label{fig:turing}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[scale=0.95]{HPCcompare_ModelBuilding.eps}
+        %\caption{Comparison of model building time between HPC environments}
+        \label{fig:hpccompare}
+    \end{subfigure}
+    %\caption{Solver time comparisons in CORENeuron simulations across HPC platforms.}
+    \label{fig:gpu-hpc-comparison}
+\end{figure}
 
 
 \begin{figure}[htbp]
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{../CBrain2025/Turing.eps}
-        \caption{TITAN RTX architecture: Solver time vs. varying numbers of GPUs in CORENeuron-GPU simulator.}
+        \includegraphics[scale=0.95]{../CBrain2025/Turing.eps}
+        %\caption{TITAN RTX architecture: Solver time vs. varying numbers of GPUs in CORENeuron-GPU simulator.}
         \label{fig:turing}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{../CBrain2025/HPCcompare.eps}
-        \caption{Comparison of solver time between HPC environments}
+        \includegraphics[scale=0.95]{../CBrain2025/HPCcompare.eps}
+        %\caption{Comparison of solver time between HPC environments}
         \label{fig:hpccompare}
     \end{subfigure}
     %\caption{Solver time comparisons in CORENeuron simulations across HPC platforms.}
@@ -259,15 +237,14 @@ Intel(R)-Xeon  & 30 & 1670  & CoreNEURON-CPU \\
 
   \justifying
 
-{\large TITAN RTXs outperform 30-core CPUs by up to 9.8x, with performance improving as GPU count increases. \\[5 mm]
+{\large TITAN RTXs outperform 30-core CPUs by up to 8.4x (on model building) 9.8x (on solver time), with performance improving as GPU count increases. \\[5 mm]
 
 
-{\LARGE \textbf{\textcolor{darkorchid}{Future works: \\[5 mm]}}} \HandRight ~\textbf{Develop a biologically realistic cerebellar circuit model} including granule layer (with Golgi cells), Purkinje layer, and other interneurons.   \\[5 mm]
+{\LARGE \textbf{\textcolor{darkorchid}{Future works: \\[5 mm]}}} \HandRight ~\textbf{Develop a biologically realistic cerebellar circuit model} including granule layer (with Golgi cells), Purkinje layer, and other interneurons.   \\[1 in]
 
-\HandRight ~ \textbf{Benchmark network performance across multiple institutions} to evaluate and understand the scalability and performance limits of HPC systems.\\[5 mm]}
+\HandRight ~ \textbf{Benchmark network performance across multiple institutions} to evaluate and understand the scalability and performance limits of HPC systems.\\[1 in]}
 
-
-            \end{block}
+\end{block}
 
             {
 % \setbeamercolor{myblock}{parent=block body} % Use Berlin block background color
@@ -293,7 +270,7 @@ Intel(R)-Xeon  & 30 & 1670  & CoreNEURON-CPU \\
 
 
 
-        \end{column}
+ \end{column}
     \end{columns}
 
 \end{frame}
@@ -361,3 +338,17 @@ Simulation software               &  CORENeuron  \\
 \end{tabular}
 \end{table}
 
+
+
+\begin{table}[htbp]
+\centering
+\caption{Performance in CPU parallel computing (30-task MPI)}
+\setlength{\tabcolsep}{30pt}
+\begin{tabular}{c c c  c }
+\hline
+CPU & Core & Solver Time (s)  & Simulator\\
+\hline
+Intel(R)-Xeon  & 30 & 1670  & CoreNEURON-CPU \\
+\hline
+\end{tabular}
+\end{table}
