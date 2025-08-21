@@ -86,8 +86,8 @@
 
  \begin{columns}
         % First column
-        \begin{column}{0.30 \linewidth}
-        \vspace{-1 in}
+        \begin{column}{0.31 \linewidth}
+        \vspace{-2.2 in}
 
             \begin{block}{\LARGE Introduction}
             \justifying
@@ -122,8 +122,8 @@
 
 
 %################### Second column ####################
-        \begin{column}{0.30\textwidth}
-    \vspace{-1   in}
+        \begin{column}{0.31\textwidth}
+    \vspace{-1.5   in}
                 \begin{block}{\LARGE Our Computational Framework}
              \vspace{2 cm}
 
@@ -152,7 +152,7 @@ This allows us to rigorously assess the scalability and performance limits of GP
      \end{column}
 
 %################### Third column ####################
-        \begin{column}{0.30\textwidth}
+\begin{column}{0.31\textwidth}
 
 
 
@@ -278,78 +278,3 @@ Simulation software & CoreNEURON \\
 %\end{textblock}
 
 \end{document}
-
-
-   \begin{figure}[htbp]
-    \centering
-    \begin{minipage}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{../CBrain2025/Turing.eps}
-        \vspace{1em}
-        \caption{a. Turing architecture: Comparison of solver time for varying numbers of GPUs in CoreNEURON-GPU simulator}
-
-        \label{fig:turing}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{../CBrain2025/HPCcompare.eps}
-        \caption{b. Comparison of solver time between HPC environments }
-        \label{fig:hpccompare}
-    \end{minipage}
-\end{figure}
-
-
-Previous title
-
-Container-based high-performance computing for modeling large-scale biological neural networks
-
-\begin{table}[htbp]
-\centering
-\caption{Network Configuration and Simulation Parameters}
-\begin{tabular}{l@{\hspace{5cm}}c}
-\hline
-\textcolor{green}{Number of MF}         & \textcolor{green}{0.299~M} \\
-\textcolor{gray}{Number of GRC}     & \textcolor{gray}{1.09 M} \\
-\hline
-Number of compartments                & 3.29 M \\
-Number of synapses                    & 3.47 M \\
-Simulation time                       & ~~~~~~1 s \\
-Simulation software  &  \hspace{-2 cm} CoreNEURON  \\
-\hline
-\end{tabular}
-\end{table}
-
-
-
-\begin{table}[htbp]
-\centering
-\caption{Network Configuration and Simulation Parameters}
-\begin{tabular}{l@{\hspace{3cm}}c}
-\hline
-\textcolor{green}{Number of MF}     & 0.30 M \\
-\textcolor{gray}{Number of GRC}     & 1.09 M \\
-\hline
-Number of compartments             & 3.29 M \\
-Number of synapses                & 3.47 M \\
-\hline
-Simulation time                   & 1 s  \\
-Simulation software               &  CORENeuron  \\
-\hline
-\end{tabular}
-\end{table}
-
-
-
-\begin{table}[htbp]
-\centering
-\caption{Performance in CPU parallel computing (30-task MPI)}
-\setlength{\tabcolsep}{30pt}
-\begin{tabular}{c c c  c }
-\hline
-CPU & Core & Solver Time (s)  & Simulator\\
-\hline
-Intel(R)-Xeon  & 30 & 1670  & CoreNEURON-CPU \\
-\hline
-\end{tabular}
-\end{table}
