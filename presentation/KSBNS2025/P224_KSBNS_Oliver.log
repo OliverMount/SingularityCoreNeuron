@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.30)  21 AUG 2025 08:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.30)  21 AUG 2025 09:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1076,22 +1076,22 @@ Package epstopdf Info: Source file: <logo.eps>
 (epstopdf)                    size: 11296 bytes
 (epstopdf)             Command: <repstopdf --outfile=logo-eps-converted-to.pdf 
 logo.eps>
-(epstopdf)             \includegraphics on input line 278.
+(epstopdf)             \includegraphics on input line 277.
 Package epstopdf Info: Output file is already uptodate.
 <logo-eps-converted-to.pdf, id=13, 60.225pt x 17.06375pt>
 File: logo-eps-converted-to.pdf Graphic file (type pdf)
 <use logo-eps-converted-to.pdf>
-Package pdftex.def Info: logo-eps-converted-to.pdf  used on input line 278.
+Package pdftex.def Info: logo-eps-converted-to.pdf  used on input line 277.
 (pdftex.def)             Requested size: 542.02354pt x 153.57321pt.
-LaTeX Font Info:    Calculating math sizes for size <60.2> on input line 278.
+LaTeX Font Info:    Calculating math sizes for size <60.2> on input line 277.
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 278.
+ut line 277.
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-LaTeX Font Info:    Calculating math sizes for size <50.16> on input line 278.
-LaTeX Font Info:    Calculating math sizes for size <41.8> on input line 278.
+LaTeX Font Info:    Calculating math sizes for size <50.16> on input line 277.
+LaTeX Font Info:    Calculating math sizes for size <41.8> on input line 277.
 Package epstopdf Info: Source file: <../CBrain2025/output1.eps>
 (epstopdf)                    date: 2025-07-14 18:17:46
 (epstopdf)                    size: 3048830 bytes
@@ -1101,15 +1101,15 @@ Package epstopdf Info: Source file: <../CBrain2025/output1.eps>
 (epstopdf)                    size: 183729 bytes
 (epstopdf)             Command: <repstopdf --outfile=../CBrain2025/output1-eps-
 converted-to.pdf ../CBrain2025/output1.eps>
-(epstopdf)             \includegraphics on input line 278.
+(epstopdf)             \includegraphics on input line 277.
 Package epstopdf Info: Output file is already uptodate.
 <../CBrain2025/output1-eps-converted-to.pdf, id=14, 585.18625pt x 500.87125pt>
 File: ../CBrain2025/output1-eps-converted-to.pdf Graphic file (type pdf)
 <use ../CBrain2025/output1-eps-converted-to.pdf>
 Package pdftex.def Info: ../CBrain2025/output1-eps-converted-to.pdf  used on in
-put line 278.
+put line 277.
 (pdftex.def)             Requested size: 1287.4048pt x 1101.91249pt.
-LaTeX Font Info:    Calculating math sizes for size <34.83> on input line 278.
+LaTeX Font Info:    Calculating math sizes for size <34.83> on input line 277.
 Package epstopdf Info: Source file: <../CBrain2025/output.eps>
 (epstopdf)                    date: 2025-07-15 18:44:52
 (epstopdf)                    size: 7181183 bytes
@@ -1119,13 +1119,13 @@ Package epstopdf Info: Source file: <../CBrain2025/output.eps>
 (epstopdf)                    size: 350908 bytes
 (epstopdf)             Command: <repstopdf --outfile=../CBrain2025/output-eps-c
 onverted-to.pdf ../CBrain2025/output.eps>
-(epstopdf)             \includegraphics on input line 278.
+(epstopdf)             \includegraphics on input line 277.
 Package epstopdf Info: Output file is already uptodate.
 <../CBrain2025/output-eps-converted-to.pdf, id=15, 545.03625pt x 605.26125pt>
 File: ../CBrain2025/output-eps-converted-to.pdf Graphic file (type pdf)
 <use ../CBrain2025/output-eps-converted-to.pdf>
 Package pdftex.def Info: ../CBrain2025/output-eps-converted-to.pdf  used on inp
-ut line 278.
+ut line 277.
 (pdftex.def)             Requested size: 932.01338pt x 1034.99823pt.
 Package epstopdf Info: Source file: <../CBrain2025/CC.eps>
 (epstopdf)                    date: 2025-07-14 18:59:29
@@ -1135,13 +1135,13 @@ Package epstopdf Info: Source file: <../CBrain2025/CC.eps>
 (epstopdf)                    size: 1092033 bytes
 (epstopdf)             Command: <repstopdf --outfile=../CBrain2025/CC-eps-conve
 rted-to.pdf ../CBrain2025/CC.eps>
-(epstopdf)             \includegraphics on input line 278.
+(epstopdf)             \includegraphics on input line 277.
 Package epstopdf Info: Output file is already uptodate.
 <../CBrain2025/CC-eps-converted-to.pdf, id=16, 594.22pt x 372.39125pt>
 File: ../CBrain2025/CC-eps-converted-to.pdf Graphic file (type pdf)
 <use ../CBrain2025/CC-eps-converted-to.pdf>
 Package pdftex.def Info: ../CBrain2025/CC-eps-converted-to.pdf  used on input l
-ine 278.
+ine 277.
 (pdftex.def)             Requested size: 1158.72435pt x 726.16pt.
 Package epstopdf Info: Source file: <Turing_ModelBuilding.eps>
 (epstopdf)                    date: 2025-08-20 16:35:05
@@ -1152,13 +1152,13 @@ Package epstopdf Info: Source file: <Turing_ModelBuilding.eps>
 (epstopdf)                    size: 12212 bytes
 (epstopdf)             Command: <repstopdf --outfile=Turing_ModelBuilding-eps-c
 onverted-to.pdf Turing_ModelBuilding.eps>
-(epstopdf)             \includegraphics on input line 278.
+(epstopdf)             \includegraphics on input line 277.
 Package epstopdf Info: Output file is already uptodate.
 <Turing_ModelBuilding-eps-converted-to.pdf, id=17, 578.16pt x 650.43pt>
 File: Turing_ModelBuilding-eps-converted-to.pdf Graphic file (type pdf)
 <use Turing_ModelBuilding-eps-converted-to.pdf>
 Package pdftex.def Info: Turing_ModelBuilding-eps-converted-to.pdf  used on inp
-ut line 278.
+ut line 277.
 (pdftex.def)             Requested size: 549.24889pt x 617.905pt.
 Package epstopdf Info: Source file: <HPCcompare_ModelBuilding.eps>
 (epstopdf)                    date: 2025-08-20 16:35:07
@@ -1169,13 +1169,13 @@ pdf>
 (epstopdf)                    size: 12267 bytes
 (epstopdf)             Command: <repstopdf --outfile=HPCcompare_ModelBuilding-e
 ps-converted-to.pdf HPCcompare_ModelBuilding.eps>
-(epstopdf)             \includegraphics on input line 278.
+(epstopdf)             \includegraphics on input line 277.
 Package epstopdf Info: Output file is already uptodate.
 <HPCcompare_ModelBuilding-eps-converted-to.pdf, id=18, 578.16pt x 650.43pt>
 File: HPCcompare_ModelBuilding-eps-converted-to.pdf Graphic file (type pdf)
 <use HPCcompare_ModelBuilding-eps-converted-to.pdf>
 Package pdftex.def Info: HPCcompare_ModelBuilding-eps-converted-to.pdf  used on
- input line 278.
+ input line 277.
 (pdftex.def)             Requested size: 549.24889pt x 617.905pt.
 Package epstopdf Info: Source file: <Turing.eps>
 (epstopdf)                    date: 2025-08-20 16:34:51
@@ -1185,12 +1185,12 @@ Package epstopdf Info: Source file: <Turing.eps>
 (epstopdf)                    size: 11364 bytes
 (epstopdf)             Command: <repstopdf --outfile=Turing-eps-converted-to.pd
 f Turing.eps>
-(epstopdf)             \includegraphics on input line 278.
+(epstopdf)             \includegraphics on input line 277.
 Package epstopdf Info: Output file is already uptodate.
 <Turing-eps-converted-to.pdf, id=19, 578.16pt x 650.43pt>
 File: Turing-eps-converted-to.pdf Graphic file (type pdf)
 <use Turing-eps-converted-to.pdf>
-Package pdftex.def Info: Turing-eps-converted-to.pdf  used on input line 278.
+Package pdftex.def Info: Turing-eps-converted-to.pdf  used on input line 277.
 (pdftex.def)             Requested size: 549.24889pt x 617.905pt.
 Package epstopdf Info: Source file: <HPCcompare.eps>
 (epstopdf)                    date: 2025-08-20 16:34:57
@@ -1200,16 +1200,16 @@ Package epstopdf Info: Source file: <HPCcompare.eps>
 (epstopdf)                    size: 11971 bytes
 (epstopdf)             Command: <repstopdf --outfile=HPCcompare-eps-converted-t
 o.pdf HPCcompare.eps>
-(epstopdf)             \includegraphics on input line 278.
+(epstopdf)             \includegraphics on input line 277.
 Package epstopdf Info: Output file is already uptodate.
 <HPCcompare-eps-converted-to.pdf, id=20, 578.16pt x 650.43pt>
 File: HPCcompare-eps-converted-to.pdf Graphic file (type pdf)
 <use HPCcompare-eps-converted-to.pdf>
 Package pdftex.def Info: HPCcompare-eps-converted-to.pdf  used on input line 27
-8.
+7.
 (pdftex.def)             Requested size: 549.24889pt x 617.905pt.
 LaTeX Font Info:    Trying to load font information for U+ding on input line 27
-8.
+7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bbding/Uding.fd
 File: Uding.fd 1996/02/01 v1.0 BBding font definitions
@@ -1222,15 +1222,19 @@ Package epstopdf Info: Source file: <../CBrain2025/H.eps>
 (epstopdf)                    size: 51288 bytes
 (epstopdf)             Command: <repstopdf --outfile=../CBrain2025/H-eps-conver
 ted-to.pdf ../CBrain2025/H.eps>
-(epstopdf)             \includegraphics on input line 278.
+(epstopdf)             \includegraphics on input line 277.
 Package epstopdf Info: Output file is already uptodate.
 <../CBrain2025/H-eps-converted-to.pdf, id=21, 181.67876pt x 154.5775pt>
 File: ../CBrain2025/H-eps-converted-to.pdf Graphic file (type pdf)
 <use ../CBrain2025/H-eps-converted-to.pdf>
 Package pdftex.def Info: ../CBrain2025/H-eps-converted-to.pdf  used on input li
-ne 278.
+ne 277.
 (pdftex.def)             Requested size: 199.84723pt x 170.03575pt.
- [1
+
+Overfull \vbox (3.88177pt too high) detected at line 277
+ []
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo-eps-converted-to.pd
 f> <../CBrain2025/output1-eps-converted-to.pdf> <../CBrain2025/output-eps-conve
@@ -1247,7 +1251,7 @@ s-converted-to.pdf> <./HPCcompare_ModelBuilding-eps-converted-to.pdf> <./Turing
 \tf@snm=\write8
 \openout8 = `P224_KSBNS_Oliver.snm'.
 
-(./P224_KSBNS_Oliver.aux)
+ (./P224_KSBNS_Oliver.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1268,7 +1272,7 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on P224_KSBNS_Oliver.pdf (1 page, 1775790 bytes).
+Output written on P224_KSBNS_Oliver.pdf (1 page, 1775784 bytes).
 PDF statistics:
  130 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream
