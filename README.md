@@ -1,6 +1,15 @@
 # SingularityCoreNeuron
 
-This repository provides a streamlined method to build a Singularity image for CoreNEURON with GPU and MPI support, suitable for use in HPC environments.
+This repository provides a streamlined method for building a **Singularity (Apptainer)** image of **CoreNEURON** with **GPU** and **MPI** support, ready for deployment in **HPC environments**.
+
+
+| Directory | Description |
+|------------|--------------|
+| `def_files/` | Singularity definition files (`*.def`) for different systems |
+| `install/` | Installer scripts for building the Singularity image |
+| `batch/` | Example SLURM batch scripts for running jobs on HPC systems |
+
+
 
 ## Repository Structure
 
