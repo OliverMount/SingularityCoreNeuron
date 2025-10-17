@@ -10,7 +10,7 @@ export APPTAINER_TMPDIR="$tmpDIR"
 export APPTAINER_CACHEDIR="$cacheDIR"
 
 # Build the sandbox image (cn for CoreNEURON)
-sudo apptainer build --fix-perms --sandbox "$imageDIR/cn_sandbox" "$defDIR/cn.def"
+sudo apptainer build --fix-perms --sandbox "$imageDIR/olaf_sandbox" "$defDIR/olaf.def"
 
 # Build the image sif from sandbox
-sudo apptainer build --fix-perms "$imageDIR/cn.sif" "$imageDIR/cn_sandbox"
+sudo apptainer build --fix-perms "$imageDIR/olaf.sif" "$imageDIR/olaf_sandbox"
