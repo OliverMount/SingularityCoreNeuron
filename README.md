@@ -1,6 +1,6 @@
 # SingularityCoreNeuron
 
-This repository provides a streamlined method to build a Singularity image for CoreNEURON with GPU and MPI support, suitable for use in HPC environments.
+This repository provides a streamlined method to build a Singularity image for CoreNEURON with MPI and/or GPU support, suitable for use in high performance computing (HPC) environments.
 
 ## Repository Structure
 
@@ -10,9 +10,9 @@ This repository provides a streamlined method to build a Singularity image for C
 
 ## Prerequisites
 
-- NVIDIA HPC SDK (large download, ~7GB)
-- SLURM-aware OpenMPI libraries (use the same openmpi libraries as used in the HPC environment)
 - Singularity (version 3.0+ recommended)
+- SLURM-aware OpenMPI libraries (for MPI-based parallel simulations. Use **the same openmpi libraries** as used in the HPC environment)
+- NVIDIA HPC SDK (for GPU-based simulations. Note that it is a large download, ~7GB)
 
 > **Note:** The NVIDIA-HPC-SDK and OpenMPI SLRUM-aware libraries are **not included** in the repository. You must download them manually.
 
@@ -27,8 +27,8 @@ cd SingularityCoreNeuron
 ### 2. Edit Definition File
 Navigate to the `def_files` directory and edit the `%files` section of the `cn.def` file. Update the file paths to point to your **locally downloaded**:
 
-- NVIDIA HPC SDK tarball
 - OpenMPI tarball or prebuilt directory (make sure the OpenMPI libraries in the container is the same version as in the HPC for ABI compatibility.)
+- NVIDIA HPC SDK tarball
 
 ```bash
 cd def_files
@@ -37,7 +37,10 @@ vim cn.def
 
 Update paths under `%files` accordingly.
 
-A way to find which mpi installed in your HPC is slrum-aware, run the following in your HPC terminal 
+#### HPC systems using SLURM
+
+If the HPC environment uses the SLURM scheduler, the same version of the MPI libraries should be a container. To find which mpi installed in your HPC is slrum-aware, run the following in your HPC terminal 
+
 ```bash
 srun --mpi=list
 ```
@@ -49,20 +52,19 @@ srun: cray_shasta
 srun: none
 srun: pmi2
 ```
-The output shows that in our HPC pmi2 libraries are used. Find their locations by
+The output shows that in our HPC pmi2 libraries are used. Find their locations, e.g. by
 
 ```
 find /usr/include /usr/local/include -name pmi2.h
 find /usr/include /usr/local/include -name libpmi2.so
 ```
 
-copy them to a local folder in a computer 
+Copy them to a local folder in a computer
 
 ```
-cp /usr/include/slurm/pmi*.h YourLocalFolder/include/
-cp /lib64/libpmi*.so* YourLocalFolder/lib64/
-cp /usr/lib64/slurm/libslurm_pmi.so* YourLocalFolder/lib64/
-
+cp /usr/include/slurm/pmi*.h <YourLocalFolder>/include/
+cp /lib64/libpmi*.so* <YourLocalFolder>/lib64/
+cp /usr/lib64/slurm/libslurm_pmi.so* <YourLocalFolder>/lib64/
 ```
 and transfer them during image formation (These are the first five lines in our cn.def file).
 
@@ -119,4 +121,6 @@ sbatch run.batch
 ```
 ---
 
+Written by Oliver James and Sungho Hong, Center for Memory and Glioscience, IBS, South Korea
 
+October 2025
