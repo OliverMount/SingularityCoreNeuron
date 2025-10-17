@@ -163,7 +163,7 @@ image/
 
 Example SLURM batch scripts are provided in the `batch/` directory.
 
-1. Open and edit `run.batch` to adjust:
+1. Open and edit `run.batch` to adjust (we used this for our HPC):
    - Number of GPUs
    - Threads or nodes per job
 
