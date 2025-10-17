@@ -25,6 +25,7 @@ cd SingularityCoreNeuron
 ```
 
 ### 2. Edit Definition File
+
 Navigate to the `def_files` directory and edit the `%files` section of the `cn.def` file. Update the file paths to point to your **locally downloaded**:
 
 - NVIDIA HPC SDK tarball
