@@ -1,7 +1,9 @@
-# SingularityCoreNeuron
+## SingularityCoreNeuron
 
 This repository provides a streamlined method for building a **Singularity (Apptainer)** image of **CoreNEURON** with **GPU** and **MPI** support, ready for deployment in **HPC environments**.
 
+
+## Repository Structure
 
 | Directory | Description |
 |------------|--------------|
@@ -10,20 +12,16 @@ This repository provides a streamlined method for building a **Singularity (Appt
 | `batch/` | Example SLURM batch scripts for running jobs on HPC systems |
 
 
-
-## Repository Structure
-
-- `def_files/`: Contains Singularity definition files (`*.def`)
-- `install/`: Installer scripts used to build the Singularity image
-- `batch/`: Example SLURM batch scripts to run jobs in HPC environment
-
 ## Prerequisites
 
-- NVIDIA HPC SDK (large download, ~7GB)
-- SLURM-aware OpenMPI libraries (use the same openmpi libraries as used in the HPC environment)
-- Singularity (version 3.0+ recommended)
+Before starting, ensure you have the following (if you use NVIDIA HPC SDK and openmpi):
 
-> **Note:** The NVIDIA-HPC-SDK and OpenMPI SLRUM-aware libraries are **not included** in the repository. You must download them manually.
+- **NVIDIA HPC SDK** (~7 GB download)  
+- **SLURM-aware OpenMPI** (use the same version as your HPC environment)  
+- **Singularity / Apptainer** version **3.0+**
+
+> **Note:** The NVIDIA HPC SDK and OpenMPI libraries are **not included** in this repository.  
+> You must download them manually before building the image.
 
 ## Step-by-Step Instructions
 
