@@ -23,52 +23,82 @@ Before starting, ensure you have the following (if you use NVIDIA HPC SDK and op
 > **Note:** The NVIDIA HPC SDK and OpenMPI libraries are **not included** in this repository.  
 > You must download them manually before building the image.
 
-## Step-by-Step Instructions
+## Installation Guide
 
 ### 1. Clone the Repository
 ```bash
 git clone git@github.com:OliverMount/SingularityCoreNeuron.git
 cd SingularityCoreNeuron
 ```
+---
+
 
 ### 2. Edit Definition File
 
-1. Navigate to the `def_files` directory. It contains HPCtemplate.def (which can be used as a guide to write def files for your HPC).
-2. Particular def files for the HPC (olaf.def) or workstations (karina.def/ levi.def) used in our lab are also present in this directory. 
-3. Every def file in apptainer is organized as sections.   For example, the section `%files` species  the local files you want them to the included in the apptainer image. In our olaf.def, this includes the 
-- NVIDIA HPC SDK tarball
-- OpenMPI tarball or prebuilt directory (make sure the OpenMPI libraries in the container is the same version as in the HPC for ABI compatibility.)
- 
+Navigate to the `def_files/` directory:
 
-A way to find which mpi installed in your HPC is slrum-aware, run the following in your HPC terminal 
+```bash
+cd def_files
+```
+
+This directory contains several example definition (`*.def`) files:
+
+- **`HPCtemplate.def`** – Template for creating new HPC-specific definition files.  
+- **`olaf.def`** – Example definition file for our HPC system.  
+- **`karina.def` / `levi.def`** – Example workstation builds.
+
+Each definition file consists of sections such as:
+
+- `%files` — lists local files to include in the image (e.g., SDK tarballs, MPI libs).  
+- `%post` — commands executed inside the container during image creation.
+ 
+#### 🧩 Including Local MPI & SDK Files
+
+In `olaf.def`, the `%files` section typically includes:
+
+- NVIDIA HPC SDK tarball  
+- OpenMPI tarball or prebuilt directory  
+
+⚠️ **Important:**  
+Ensure the OpenMPI version inside the container matches the one on your HPC for **ABI compatibility**.
+
+---
+
+### **3. Identify SLURM-aware MPI Libraries**
+
+To determine which MPI type your HPC uses, run:
+
 ```bash
 srun --mpi=list
 ```
-The output (in our HPC) would be like 
 
+Example output:
 ```
 srun: MPI types are...
 srun: cray_shasta
 srun: none
 srun: pmi2
 ```
-The output shows that in our HPC pmi2 libraries are used. Find their locations by
 
-```
+In this example, `pmi2` is the MPI interface used.  
+Locate the corresponding headers and libraries:
+
+```bash
 find /usr/include /usr/local/include -name pmi2.h
 find /usr/include /usr/local/include -name libpmi2.so
 ```
 
-copy them to a local folder in a computer 
+Then copy them to a local folder:
 
-```
+```bash
 cp /usr/include/slurm/pmi*.h YourLocalFolder/include/
 cp /lib64/libpmi*.so* YourLocalFolder/lib64/
 cp /usr/lib64/slurm/libslurm_pmi.so* YourLocalFolder/lib64/
-
 ```
-and transfer them during image formation (These are the first five lines in our cn.def file).
 
+These will be transferred into the image during the build (see first lines in `olaf.def`).
+
+---
 
 ### 3. Set Installation Path
 Edit the `install/full.sh` script and update the `appDIR` variable to reflect the path where you cloned the repository:
