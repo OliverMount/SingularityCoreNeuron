@@ -26,18 +26,12 @@ cd SingularityCoreNeuron
 
 ### 2. Edit Definition File
 
-1. Navigate to the `def_files` directory. It contains HPCtemplate.def (which can be used as a guide for your HPC). Particular def files used in our lab are also present in this directory. For example, the def file for the HPC in our center is available in the olaf.def
-
-2. Edit the sections of the `your_def_file.def` file. For example, edit the section `%files` to include any local files you want them to the included in the apptainer image. In our olaf.def, this includes the 
+1. Navigate to the `def_files` directory. It contains HPCtemplate.def (which can be used as a guide to write def files for your HPC).
+2. Particular def files for the HPC (olaf.def) or workstations (karina.def/ levi.def) used in our lab are also present in this directory. 
+3. Every def file in apptainer is organized as sections.   For example, the section `%files` species  the local files you want them to the included in the apptainer image. In our olaf.def, this includes the 
 - NVIDIA HPC SDK tarball
 - OpenMPI tarball or prebuilt directory (make sure the OpenMPI libraries in the container is the same version as in the HPC for ABI compatibility.)
-
-```bash
-cd def_files
-vim olaf.def
-```
-
-Update paths under `%files` accordingly.
+ 
 
 A way to find which mpi installed in your HPC is slrum-aware, run the following in your HPC terminal 
 ```bash
@@ -79,7 +73,7 @@ vim full.sh
 
 Set:
 ```bash
-appDIR=/your/path/to/SingularityCoreNeuron
+appDIR=</your/path/to/SingularityCoreNeuron>
 ```
 
 ### 4. Create Required Directories
