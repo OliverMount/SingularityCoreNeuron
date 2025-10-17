@@ -26,14 +26,15 @@ cd SingularityCoreNeuron
 
 ### 2. Edit Definition File
 
-Navigate to the `def_files` directory and edit the `%files` section of the `cn.def` file. Update the file paths to point to your **locally downloaded**:
+1. Navigate to the `def_files` directory. It contains HPCtemplate.def (which can be used as a guide for your HPC). Particular def files used in our lab are also present in this directory. For example, the def file for the HPC in our center is available in the olaf.def
 
+2. Edit the sections of the `your_def_file.def` file. For example, edit the section `%files` to include any local files you want them to the included in the apptainer image. In our olaf.def, this includes the 
 - NVIDIA HPC SDK tarball
 - OpenMPI tarball or prebuilt directory (make sure the OpenMPI libraries in the container is the same version as in the HPC for ABI compatibility.)
 
 ```bash
 cd def_files
-vim cn.def
+vim olaf.def
 ```
 
 Update paths under `%files` accordingly.
