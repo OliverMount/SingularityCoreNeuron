@@ -176,4 +176,24 @@ sbatch run.batch
 
 ---
 
+ 
+## Troubleshooting
+
+- **Build fails due to missing MPI libraries:**  
+  Ensure you copied the correct `pmi2.h` and `libpmi*.so` files into the image.
+
+- **Version mismatch errors:**  
+  Confirm that your container’s OpenMPI matches the HPC’s MPI version. 
+ 
+---
+
+## 📚 References
+
+- [CoreNEURON Documentation](https://github.com/BlueBrain/CoreNeuron)
+- [Singularity / Apptainer Official Docs](https://apptainer.org/docs/)
+- [NVIDIA HPC SDK](https://developer.nvidia.com/hpc-sdk)
+- [OpenMPI Documentation](https://www.open-mpi.org/doc/)
+
+
+
 
