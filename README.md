@@ -100,40 +100,36 @@ These will be transferred into the image during the build (see first lines in `o
 
 ---
 
-### 3. Set Installation Path
-Edit the `install/full.sh` script and update the `appDIR` variable to reflect the path where you cloned the repository:
+### **4. Set Installation Path**
+
+Edit the installation script:
 
 ```bash
-cd install
+cd install/
 vim full.sh
 ```
 
-Set:
+Update the following variable to your repository path:
+
 ```bash
 appDIR=</your/path/to/SingularityCoreNeuron>
 ```
 
-### 4. Create Required Directories
-Ensure the following directories exist. By default, these are located in your `$HOME`:
+---
 
-- `tmp/`
-- `cache/`
-- `image/`
 
-If you change their paths, update them in `install/full.sh`.
+### **5. Create Required Directories**
+
+By default, the installer expects the following directories in your `$HOME`:
 
 ```bash
 mkdir -p $HOME/tmp $HOME/cache $HOME/image
 ```
 
-### 5. Run the Installation Script
-```bash
-cd install
-./full.sh
-```
+If you use different paths, make sure to specify them in `install/full.sh`.
 
-This will build the Singularity sandbox and `.sif` image and place them in the `image/` directory.
-
+---
+ 
 ### 6. Locate the Output
 After successful execution, the output files will be located in:
 ```
