@@ -129,23 +129,51 @@ mkdir -p $HOME/tmp $HOME/cache $HOME/image
 If you use different paths, make sure to specify them in `install/full.sh`.
 
 ---
- 
-### 6. Locate the Output
-After successful execution, the output files will be located in:
+
+### **6. Run the Installation Script**
+
+Build the Singularity image:
+
+```bash
+cd install
+./full.sh
+```
+
+This process will:
+
+- Build a sandbox container  
+- Generate the `.sif` image file  
+- Store both outputs in the `image/` directory
+
+---
+
+### **7. Locate the Output**
+
+After successful execution, the build artifacts will be located in:
+
 ```
 image/
-  |-- olaf.sif
-  |-- olaf_sandbox/
+├── olaf.sif
+└── olaf_sandbox/
 ```
 
-## Running on HPC 
+---
 
-SLURM batch scripts for running CoreNEURON jobs on HPC are provided in the `batch/` directory. To run:
-Change the GPU numbers, threads in the batch file
+## Running CoreNEURON on HPC
+
+Example SLURM batch scripts are provided in the `batch/` directory.
+
+1. Open and edit `run.batch` to adjust:
+   - Number of GPUs
+   - Threads or nodes per job
+
+2. Submit the job:
+
 ```bash
 cd batch
 sbatch run.batch
 ```
+
 ---
 
 
