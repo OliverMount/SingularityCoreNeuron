@@ -47,10 +47,17 @@ This directory contains several example definition (`*.def`) files:
 - **`olaf.def`** – Example definition file for our HPC system.  
 - **`karina.def` / `levi.def`** – Example workstation builds.
 
-Each definition file consists of sections such as:
 
-- `%files` — lists local files to include in the image (e.g., SDK tarballs, MPI libs).  
-- `%post` — commands executed inside the container during image creation.
+
+#### Definition File Organization
+Each Singularity definition file is organized into several key sections:
+
+* **%files** — Specifies local files to be copied into the container image (e.g., SDK tarballs, MPI libraries).
+* **%post** — Contains commands to install software packages and libraries required inside the container.
+* **%environment** — Defines environment variables such as Python virtual environment settings, and paths for NVIDIA, CUDA, and OpenMPI.
+* **%labels** — Provides metadata and a brief description of the container.
+
+
  
 #### 🧩 Including Local MPI & SDK Files
 
