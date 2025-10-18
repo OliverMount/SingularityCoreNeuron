@@ -13,9 +13,9 @@ rm -rf tmp/ x86_64/
 
 module load singularity
 
-singularity exec --nv --cleanenv /proj/internal_group/ccs/oli/cn.sif nrnivmodl  -coreneuron mod/    # Assuming running from the src folder
+singularity exec --nv --cleanenv /proj/internal_group/ccs/oli/olaf.sif nrnivmodl  -coreneuron mod/    # Assuming running from the src folder
 
 # submit the job using singularity container
-srun --mpi=pmi2 singularity exec --nv /proj/internal_group/ccs/oli/cn.sif \
+srun --mpi=pmi2 singularity exec --nv /proj/internal_group/ccs/oli/olaf.sif \
     ./x86_64/special ../scripts/test_pc_complex_spike_0423.py 
 
