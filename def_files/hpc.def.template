@@ -4,13 +4,13 @@ From: ubuntu:24.04
 %files
 	# Preloaded files from local computer
     # PMI headers and libraries for OpenMPI build
-    /media/oli/Research/Gitrepo/OLAF/slurm-pmi-for-container/include/pmi.h /usr/include/slurm/pmi.h
-    /media/oli/Research/Gitrepo/OLAF/slurm-pmi-for-container/include/pmi2.h /usr/include/slurm/pmi2.h
-    /media/oli/Research/Gitrepo/OLAF/slurm-pmi-for-container/lib64/libpmi.so /lib64/libpmi.so
-    /media/oli/Research/Gitrepo/OLAF/slurm-pmi-for-container/lib64/libpmi.so.0 /lib64/libpmi.so.0
-    /media/oli/Research/Gitrepo/OLAF/slurm-pmi-for-container/lib64/libpmi2.so /lib64/libpmi2.so
-    /media/oli/Research/Gitrepo/OLAF/slurm-pmi-for-container/lib64/libpmi2.so.0 /lib64/libpmi2.so.0
-    /media/oli/Research/Gitrepo/OLAF/slurm-pmi-for-container/lib64/libslurm_pmi.so /usr/lib64/slurm/libslurm_pmi.so
+    # <directory with local copies of MPI files>/include/pmi.h /usr/include/slurm/pmi.h
+    # <directory with local copies of MPI files>/include/pmi2.h /usr/include/slurm/pmi2.h
+    # <directory with local copies of MPI files>/lib64/libpmi.so /lib64/libpmi.so
+    # <directory with local copies of MPI files>/lib64/libpmi.so.0 /lib64/libpmi.so.0
+    # <directory with local copies of MPI files>/lib64/libpmi2.so /lib64/libpmi2.so
+    # <directory with local copies of MPI files>/lib64/libpmi2.so.0 /lib64/libpmi2.so.0
+    # <directory with local copies of MPI files>/lib64/libslurm_pmi.so /usr/lib64/slurm/libslurm_pmi.so
 
     # NVIDIA HPC SDK installer
     /home/oli/Downloads/nvhpc_2025_251_Linux_x86_64_cuda_12.6.tar.gz /opt/nvhpc_sdk.tar.gz
@@ -67,7 +67,7 @@ From: ubuntu:24.04
 
     # Set up environment for rest of the build
     export PATH=/opt/openmpi/bin:$PATH
-    export LD_LIBRARY_PATH=/opt/openmpi/lib:/lib64${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH} 
+    export LD_LIBRARY_PATH=/opt/openmpi/lib:/lib64${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
 
     # --- Python venv and modules ---
     echo ">>> Creating Python virtual environment at /opt/venv..."
@@ -131,19 +131,19 @@ From: ubuntu:24.04
 
     export PATH=/opt/nrn-install/bin:$PATH
     export PYTHONPATH=/opt/nrn-install/lib/python:$PYTHONPATH
-    
+
     # --- Automatically detect and export NMODL_PYLIB ---
     PYLIB=$(find /usr/lib /lib /usr/local/lib -name "libpython3.*.so" | grep -m1 -E "libpython3\.[0-9]+\.so")
     export NMODL_PYLIB=$PYLIB
-    echo ">>> NMODL_PYLIB set to: $NMODL_PYLIB" 
-    
+    echo ">>> NMODL_PYLIB set to: $NMODL_PYLIB"
+
 
     # --- Make persistent in container environment ---
     echo "export NMODL_PYLIB=$NMODL_PYLIB" >> $SINGULARITY_ENVIRONMENT
     echo "export NMODLHOME=/opt/nrn-install" >> $SINGULARITY_ENVIRONMENT
-    
+
     #export NMODL_PYLIB=/usr/lib/x86_64-linux-gnu/libpython3.12.so  # This was obtained after it sandbox check
-     
+
 
 %environment
     # Activate Python virtual environment automatically
@@ -160,8 +160,8 @@ From: ubuntu:24.04
     export PATH=/opt/nrn-install/bin:/opt/openmpi/bin:$NVHPC/Linux_x86_64/25.1/compilers/bin:$CUDA_HOME/bin:$PATH
     export LD_LIBRARY_PATH=/opt/nrn-install/lib:/opt/openmpi/lib:$NVHPC/Linux_x86_64/25.1/compilers/lib:$CUDA_HOME/lib64:/lib64:$LD_LIBRARY_PATH
     export PYTHONPATH=/opt/nrn-install/lib/python:$PYTHONPATH
-    
-    export NMODL_PYLIB=$(find /usr/lib /lib /usr/local/lib -name "libpython3.*.so" | grep -m1 -E "libpython3\.[0-9]+\.so") 
+
+    export NMODL_PYLIB=$(find /usr/lib /lib /usr/local/lib -name "libpython3.*.so" | grep -m1 -E "libpython3\.[0-9]+\.so")
     export NMODLHOME=/opt/nrn-install
 
 %labels

@@ -3,7 +3,9 @@ From: ubuntu:24.04
 
 %files
     # NVIDIA HPC SDK installer
-    /home/oli/Downloads/nvhpc_2025_255_Linux_x86_64_cuda_12.9.tar.gz /opt/nvhpc_sdk.tar.gz
+    # wget https://developer.download.nvidia.com/hpc-sdk/25.9/nvhpc_2025_259_Linux_x86_64_cuda_multi.tar.gz
+
+    /home/shhong/Downloads/nvhpc_2025_255_Linux_x86_64_cuda_12.9.tar.gz /opt/nvhpc_sdk.tar.gz
 
 %post
     echo ">>> Updating system and installing dependencies..."
@@ -48,13 +50,13 @@ From: ubuntu:24.04
     wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.6.tar.gz
     tar xzf openmpi-4.1.6.tar.gz
     cd openmpi-4.1.6
-    ./configure --prefix=/opt/openmpi 
+    ./configure --prefix=/opt/openmpi
     make -j12
     make install
 
     # Set up environment for rest of the build
     export PATH=/opt/openmpi/bin:$PATH
-    export LD_LIBRARY_PATH=/opt/openmpi/lib:/lib64${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH} 
+    export LD_LIBRARY_PATH=/opt/openmpi/lib:/lib64${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
 
     # --- Python venv and modules ---
     echo ">>> Creating Python virtual environment at /opt/venv..."
@@ -79,11 +81,11 @@ From: ubuntu:24.04
     # --- Build and install NEURON with CoreNEURON ---
     echo ">>> Building and installing NEURON with CoreNEURON..."
     cd /opt
-    git clone https://github.com/neuronsimulator/nrn.git    
+    git clone https://github.com/neuronsimulator/nrn.git
     # Download and extract NEURON 8.2.6 source tarball using wget
     #wget https://github.com/neuronsimulator/nrn/releases/download/8.2.6/nrn-full-src-package-8.2.6.tar.gz
     #tar -xvzf nrn-full-src-package-8.2.6.tar.gz
-    cd nrn 
+    cd nrn
     mkdir build
 
     # Set environment variables for NEURON build
@@ -122,22 +124,22 @@ From: ubuntu:24.04
 
     export PATH=/opt/nrn-install/bin:$PATH
     export PYTHONPATH=/opt/nrn-install/lib/python:$PYTHONPATH
-    
+
     # --- Automatically detect and export NMODL_PYLIB ---
     PYLIB=$(find /usr/lib /lib /usr/local/lib -name "libpython3.*.so" | grep -m1 -E "libpython3\.[0-9]+\.so")
     export NMODL_PYLIB=$PYLIB
-    echo ">>> NMODL_PYLIB set to: $NMODL_PYLIB" 
-    
+    echo ">>> NMODL_PYLIB set to: $NMODL_PYLIB"
+
 
     # --- Make persistent in container environment ---
     echo "export NMODL_PYLIB=$NMODL_PYLIB" >> $SINGULARITY_ENVIRONMENT
     echo "export NMODLHOME=/opt/nrn-install" >> $SINGULARITY_ENVIRONMENT
-    
+
     #export NMODL_PYLIB=/usr/lib/x86_64-linux-gnu/libpython3.12.so  # This was obtained after it sandbox check
-    
+
     rm -rf /opt/openmpi-4.1.6
     rm -rf /opt/nrn
-     
+
 
 %environment
     # Activate Python virtual environment automatically
@@ -154,8 +156,8 @@ From: ubuntu:24.04
     export PATH=/opt/nrn-install/bin:/opt/openmpi/bin:$NVHPC/Linux_x86_64/25.5/compilers/bin:$CUDA_HOME/bin:$PATH
     export LD_LIBRARY_PATH=/opt/nrn-install/lib:/opt/openmpi/lib:$NVHPC/Linux_x86_64/25.5/compilers/lib:$CUDA_HOME/lib64:/lib64:$LD_LIBRARY_PATH
     export PYTHONPATH=/opt/nrn-install/lib/python:$PYTHONPATH
-    
-    export NMODL_PYLIB=$(find /usr/lib /lib /usr/local/lib -name "libpython3.*.so" | grep -m1 -E "libpython3\.[0-9]+\.so") 
+
+    export NMODL_PYLIB=$(find /usr/lib /lib /usr/local/lib -name "libpython3.*.so" | grep -m1 -E "libpython3\.[0-9]+\.so")
     export NMODLHOME=/opt/nrn-install
 
 %labels

@@ -60,6 +60,7 @@ From: nvcr.io/nvidia/nvhpc:25.9-devel-cuda_multi-ubuntu24.04
     OPENMPI_MAJOR_MINOR=$(echo ${OPENMPI_VERSION} | cut -d. -f1,2)
     wget https://download.open-mpi.org/release/open-mpi/v${OPENMPI_MAJOR_MINOR}/openmpi-${OPENMPI_VERSION}.tar.gz
     tar xzf openmpi-${OPENMPI_VERSION}.tar.gz
+    rm openmpi-${OPENMPI_VERSION}.tar.gz
     cd openmpi-${OPENMPI_VERSION}
     ./configure --prefix=/opt/openmpi
     make -j12
@@ -88,7 +89,9 @@ From: nvcr.io/nvidia/nvhpc:25.9-devel-cuda_multi-ubuntu24.04
     # Download and extract NEURON source tarball using wget
     wget https://github.com/neuronsimulator/nrn/releases/download/${NEURON_VERSION}/nrn-full-src-package-${NEURON_VERSION}.tar.gz
     tar -xvzf nrn-full-src-package-${NEURON_VERSION}.tar.gz
-    cd nrn-${NEURON_VERSION}
+    mv nrn-${NEURON_VERSION} nrn
+    rm nrn-full-src-package-${NEURON_VERSION}.tar.gz
+    cd nrn
     mkdir build
 
     # Set environment variables for NEURON build
