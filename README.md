@@ -106,6 +106,7 @@ cp /usr/lib64/slurm/libslurm_pmi.so* YourLocalFolder/lib64/
 cp /lib64/libpmi*.so* <YourLocalFolder>/lib64/
 cp /usr/lib64/slurm/libslurm_pmi.so* <YourLocalFolder>/lib64/
 ```
+
 These will be transferred into the image during the build (see first lines in `olaf.def`).
 
 ---
@@ -206,6 +207,5 @@ sbatch run.batch
 
 ---
 
-Written by Oliver James and Sungho Hong, Center for Memory and Glioscience, IBS, South Korea
-
+Written by Oliver James and Sungho Hong, Center for Memory and Glioscience, IBS, South Korea.
 October 2025
