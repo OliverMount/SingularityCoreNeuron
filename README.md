@@ -98,11 +98,9 @@ find /usr/include /usr/local/include -name libpmi2.so
 Then copy them to a local folder:
 
 ```bash
-cp /usr/include/slurm/pmi*.h YourLocalFolder/include/
-cp /lib64/libpmi*.so* YourLocalFolder/lib64/
-cp /usr/lib64/slurm/libslurm_pmi.so* YourLocalFolder/lib64/
-```
-
+cp /usr/include/slurm/pmi*.h <YourLocalFolder>/include/
+cp /lib64/libpmi*.so* <YourLocalFolder>/lib64/
+cp /usr/lib64/slurm/libslurm_pmi.so* <YourLocalFolder>/lib64/ 
 cp /lib64/libpmi*.so* <YourLocalFolder>/lib64/
 cp /usr/lib64/slurm/libslurm_pmi.so* <YourLocalFolder>/lib64/
 ```
