@@ -205,5 +205,4 @@ sbatch run.batch
 
 ---
 
-Written by Oliver James and Sungho Hong, Center for Memory and Glioscience, IBS, South Korea.
-October 2025
+Definition files developed solely by Oliver James, Center for Memory and Glioscience, IBS, South Korea, October 2025.
